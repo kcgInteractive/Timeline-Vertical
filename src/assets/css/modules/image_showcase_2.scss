@@ -1,0 +1,96 @@
+.Image-Showcase-2{
+    background: #444;
+    .text-option{
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+        -webkit-transition: all 5.25s ease-in-out;
+        -moz-transition: all 5.25s ease-in-out;
+        transition: all 5.25s ease-in-out;
+        height: 500px;
+        position: relative;
+    }
+    .active{
+        visibility: visible;
+        display: block;
+        opacity: 1;
+    }
+    .image-container{
+        background-size: cover;
+        height:100%;
+        position: relative;
+        .Image-Showcase-nav{
+            width:120px;
+            position: absolute;
+            bottom: 0;
+            right: -72px;
+            list-style: none;
+            z-index: 100;
+            li{
+                margin:1rem;
+                padding: 0;
+                background: #105ea0;
+            }
+            img:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    .text-container{
+        height:100%;
+        position: relative;
+        .text-content{
+            color: white;
+            position: absolute;
+            bottom: 12px;
+            // padding: 1rem 3rem;
+            width: 80%;
+            right: 0;
+        }
+        p{
+          font-size:1rem;
+        }
+        .title-paragraph{
+          color:#96C7D4;
+        }
+        .hr{
+          width: 75%;
+          height: 10px;
+          border-bottom: 5px solid #96C7D4;
+          margin-bottom: 1rem;
+
+        }
+    }
+    @media screen and (max-width: 39.9375em) {
+        .Image-Showcase-nav{
+            left: 0;
+            li{
+                display: inline-block;
+            }
+        }
+        .text-option{
+            height: auto;
+        }
+        .text-content{
+            position: relative;
+            margin-top:2rem;
+        }
+        .image-container{
+            height: 500px;
+        }
+    }
+}
+.image-showcase-swap{
+    .image-container{
+        float:right;
+        .Image-Showcase-nav{
+            left: -81px;
+        }
+    }
+    .text-container{
+        float: left;
+        .text-content{
+          left: 12px;
+        }
+    }
+}

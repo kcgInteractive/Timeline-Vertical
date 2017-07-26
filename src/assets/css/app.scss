@@ -1,8 +1,6 @@
-@import 'modules.scss';@import 'variables_and_mixins.scss';
-@import 'slideshow.scss';
+@import 'variables_and_mixins.scss';
 @import 'hero-images.scss';
-
-
+@import 'modules.scss';
 
 * , body {
 	box-sizing: border-box;
@@ -28,34 +26,10 @@ h3 {
 .zoneMenu {
 	position: fixed;
 }
-.chapter-info {
-	margin-top: 3rem;
-	margin-bottom: 0;
-	font-family: $museo;
-	font-size: 1.1rem;
-	font-weight: 300;
+.custom-code {
+	position: relative;
 }
-.chapter-title {
-	color: $blue;
-	font-family: $museo;
-}
-.section-title {
-	font-family: $sans;
-	text-transform: uppercase;
-	font-size: 2.5rem;
-	line-height: 1.25;
-	margin: 0;
-	padding-bottom: 1rem;
-	border-bottom: 5px solid $blue;
-	margin-bottom: 2rem;
-}
-.intro-image {
-	width: 120%;
-	transform: translateX(-10%);
-}
-.section-intro {
-	margin-top: 15rem;
-}
+
 
 
 

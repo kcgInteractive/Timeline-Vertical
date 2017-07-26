@@ -1,3 +1,5 @@
+
+
 <section class="module {%Module_Type%}">
 {% if(Module_Type == "Section_Description") { %}
   <div class="row">
@@ -68,16 +70,31 @@
 
 {% if(Module_Type == "Image_Feature_1") { %}
   <div class="row">
+  <!-- {%if(Start_New_Row == true) { %}
+    <div class="row">
+  {% } %} -->
     <div class="small-12 medium-4 large-3 columns"><p>{%Module_Copy%}</p></div>
     {^SubLevelPlaceHolder^}
-  </div>  
+ <!--  {%if(End_Row == true) { %}
+    </div>
+  {% } %}  --> 
+  </div>
 {% } #%}
 
 {% if(Module_Type == "Image_Feature_2") { %}
   <div class="row">
-    <div class="small-12 medium-4 large-3 columns"><p>{%Module_Copy%}</p></div>
+  <!-- {%if(Start_New_Row == true) { %}
+    <div class="row">
+  {% } %} -->
+  {% if (!String.IsNullOrEmpty(Left_Foundation)) { %}
+    <!--Testing-->
+    <div class="{%Left_Foundation%} columns"><p>{%Module_Copy%}</p></div>
+  {% } #%}
     {^SubLevelPlaceHolder^}
-  </div>  
+  <!-- {%if(End_Row == true) { %}
+    </div>
+  {% } %}  --> 
+  </div>
 {% } #%}
   
 {% if(Module_Type == "Hero_Module") { %}
@@ -150,7 +167,9 @@
   <p>Custom</p>
   {^SubLevelPlaceHolder^}
 {% } #%}
-  
+
+
+
 </section>
 
 <hr />

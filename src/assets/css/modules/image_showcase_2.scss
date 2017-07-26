@@ -20,7 +20,7 @@
         height:100%;
         position: relative;
         .Image-Showcase-nav{
-            width:120px;
+            width: 120px;
             position: absolute;
             bottom: 0;
             right: -65px;
@@ -39,8 +39,13 @@
     .text-container{
         height: 100%;
         position: relative;
+        .optional-copy {
+            position: absolute;
+            top: 5%;
+            width: 80%;
+            right: 0;
+        }
         .text-content{
-            
             position: absolute;
             bottom: 10%;
             // padding: 1rem 3rem;
@@ -93,7 +98,7 @@
     }
     .text-container{
         float: left;
-        .text-content{
+        .text-content, .optional-copy{
           left: 12px;
         }
     }

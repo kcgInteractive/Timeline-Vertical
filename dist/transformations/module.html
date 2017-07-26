@@ -7,6 +7,7 @@
       <div class="intro-image">
         {^SubLevelPlaceHolder^}
       </div>
+      <p>{%Module_Subtitle%}</p>
     </div>
   </div>
 {% } #%}
@@ -43,22 +44,40 @@
   
 {% if(Module_Type == "Video_Feature_1") { %}
   <p>Video Feature 1</p>
-  {^SubLevelPlaceHolder^}
+  <div class="row">
+    <div class="small-12 medium-4 large-3 columns">
+      <p>{%Module_Year%}</p>
+      <h3>{%Module_Title%}</h3>
+      <p>{%Module_Copy%}</p>
+    </div>
+    {^SubLevelPlaceHolder^}
+  </div> 
 {% } #%}
   
 {% if(Module_Type == "Video_Feature_2") { %}
   <p>Video Feature 2</p>
-  {^SubLevelPlaceHolder^}
+  <div class="row">
+    <div class="small-12 medium-4 large-3 columns">
+      <p>{%Module_Year%}</p>
+      <h3>{%Module_Title%}</h3>
+      <p>{%Module_Copy%}</p>
+    </div>
+    {^SubLevelPlaceHolder^}
+  </div> 
 {% } #%}
 
 {% if(Module_Type == "Image_Feature_1") { %}
-  <p>Image Feature 1</p>
-  {^SubLevelPlaceHolder^}
+  <div class="row">
+    <div class="small-12 medium-4 large-3 columns"><p>{%Module_Copy%}</p></div>
+    {^SubLevelPlaceHolder^}
+  </div>  
 {% } #%}
 
 {% if(Module_Type == "Image_Feature_2") { %}
-  <p>Image Feature 2</p>
-  {^SubLevelPlaceHolder^}
+  <div class="row">
+    <div class="small-12 medium-4 large-3 columns"><p>{%Module_Copy%}</p></div>
+    {^SubLevelPlaceHolder^}
+  </div>  
 {% } #%}
   
 {% if(Module_Type == "Hero_Module") { %}
@@ -73,7 +92,6 @@
   
 {% if(Module_Type == "Image_Showcase_2") { %}
   <div class="row" style="position: relative;">
-    
     {^SubLevelPlaceHolder^}
     
   </div>
@@ -81,12 +99,26 @@
   
 {% if(Module_Type == "Text_Module_Black") { %}
   <p>Text Module Black</p>
-  {^SubLevelPlaceHolder^}
-{% } #%}
+  <div class="row">
+    <div class="small-12 medium-4 large-3 columns">
+      <p>{%Module_Year%}
+      <h3>{%Module_Title%}</h3>
+      <p>{%Module_Copy%}</p>
+      {^SubLevelPlaceHolder^}
+    </div>
+  </div>
+  {% } #%}
   
 {% if(Module_Type == "Text_Module_White") { %}
   <p>Text Module White</p>
-  {^SubLevelPlaceHolder^}
+    <div class="row">
+    <div class="small-12 medium-4 large-3 columns">
+      <p>{%Module_Year%}
+      <h3>{%Module_Title%}</h3>
+      <p>{%Module_Copy%}</p>
+      {^SubLevelPlaceHolder^}
+    </div>
+  </div>
 {% } #%}
   
 {% if(Module_Type == "Year_Text_1") { %}

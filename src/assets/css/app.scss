@@ -1,6 +1,5 @@
 @import 'variables_and_mixins.scss';
-@import 'hero-images.scss';
-@import 'modules.scss';
+
 
 * , body {
 	box-sizing: border-box;
@@ -30,7 +29,8 @@ h3 {
 	position: relative;
 }
 
-
+@import 'hero-images.scss';
+@import 'modules.scss';
 
 
 

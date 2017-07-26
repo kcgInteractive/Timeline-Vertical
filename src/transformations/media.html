@@ -1,11 +1,11 @@
 {%if(Media_Type == "photo") { %}
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Feature_1" || Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Feature_2") { %}
-		<div class="image-wrapper"><img src="/kochsandbox/media/kochTimeline/{% CurrentDocument.DocumentName %}/{%Option_File%}"/></div>
+		<div class="image-wrapper"><img src="/kochsandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
 	{% } %}
 
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Showcase_2") { %}
-		<div class="text-option" id="text-option-{%DataItemIndex%}">
-			<div class="large-6 medium-6 small-12 columns end image-container" style="background-image: url('/KochSandbox/media/kochTimeline/{% CurrentDocument.DocumentName %}/{%Option_File%}');">&nbsp;</div>
+		<div class="text-option">
+			<div class="large-6 medium-6 small-12 columns end image-container" style="background-image: url('/KochSandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}');">&nbsp;</div>
 			<div class="large-6 medium-6 small-12 columns end text-container">
 				<div class="text-content">
 					<div class="hr">&nbsp;</div>
@@ -17,12 +17,12 @@
 	{% } %}
 
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Section_Description") { %}
-		<div class="image-wrapper"><img src="/kochsandbox/media/kochTimeline/{% CurrentDocument.DocumentName %}/{%Option_File%}"/></div>
+		<div class="image-wrapper"><img src="/kochsandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
 	{% } %}
 {% } #%}
 
 {%if(Media_Type == "graphic") { %}
-	<div class="image-wrapper"><img src="/kochsandbox/media/kochTimeline/{% CurrentDocument.DocumentName %}/{%Option_File%}"/></div>
+	<div class="image-wrapper"><img src="/kochsandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
 {% } #%}
 
 {%if(Media_Type == "video") { %}

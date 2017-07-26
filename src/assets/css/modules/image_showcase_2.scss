@@ -1,100 +1,111 @@
-.Image_Showcase_2{
-    background: #444;
-    .text-option{
-        visibility: hidden;
-        display: none;
-        opacity: 0;
-        -webkit-transition: all 5.25s ease-in-out;
-        -moz-transition: all 5.25s ease-in-out;
-        transition: all 5.25s ease-in-out;
-        height: 500px;
-        position: relative;
+.Image-Showcase-2{
+  background: #444;
+  .text-option{
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+    -webkit-transition: all 5.25s ease-in-out;
+    -moz-transition: all 5.25s ease-in-out;
+    transition: all 5.25s ease-in-out;
+    height: 500px;
+    position: relative;
+  }
+  .active{
+    visibility: visible;
+    display: block;
+    opacity: 1;
+  }
+  .image-container{
+    background-size: cover;
+    height:100%;
+    position: relative;
+    .Image-Showcase-nav{
+      width:120px;
+      position: absolute;
+      bottom: 0;
+      right: -72px;
+      list-style: none;
+      z-index: 100;
+      li{
+        margin:1rem;
+        padding: 0;
+        background: #105ea0;
+      }
+      img:hover{
+        opacity: 0.5;
+      }
     }
-    .active{
-        visibility: visible;
-        display: block;
-        opacity: 1;
+  }
+  .text-container{
+    height:100%;
+    position: relative;
+    .text-content{
+      color: white;
+      position: absolute;
+      bottom: 12px;
+      // padding: 1rem 3rem;
+      width: 80%;
+      right: 0;
     }
-    .image-container{
-        background-size: cover;
-        height:100%;
-        position: relative;
-        .Image-Showcase-nav{
-            width:120px;
-            position: absolute;
-            bottom: 0;
-            right: -65px;
-            list-style: none;
-            z-index: 100;
-            li{
-                margin:1rem 0;
-                padding: 0;
-                background: #105ea0;
-            }
-            img:hover{
-                opacity: 0.5;
-            }
-        }
+    p{
+      font-size:1rem;
     }
-    .text-container{
-        height: 100%;
-        position: relative;
-        .text-content{
-            
-            position: absolute;
-            bottom: 10%;
-            // padding: 1rem 3rem;
-            width: 80%;
-            right: 0;
-        }
-        p{
-          font-size: 0.75rem;
-          color: white;
-        }
-        .title-paragraph{
-          color:#96C7D4;
-          font-size: 0.825rem;
-          font-weight: 500;
-          font-family: $museo;
-        }
-        .hr{
-          width: 75%;
-          height: 10px;
-          border-bottom: 5px solid #96C7D4;
-          margin-bottom: 1rem;
+    .title-paragraph{
+      color:#96C7D4;
+    }
+    .hr{
+      width: 75%;
+      height: 10px;
+      border-bottom: 5px solid #96C7D4;
+      margin-bottom: 1rem;
 
-        }
     }
-    @media screen and (max-width: 39.9375em) {
-        .Image-Showcase-nav{
-            left: 0;
-            li{
-                display: inline-block;
-            }
-        }
-        .text-option{
-            height: auto;
-        }
-        .text-content{
-            position: relative;
-            margin-top:2rem;
-        }
-        .image-container{
-            height: 500px;
-        }
+  }
+  @media screen and (max-width: 39.9375em) {
+    .image-container .Image-Showcase-nav{
+      left: 0;
+      right: 0;
+      bottom: -60px;
+      margin: 0 auto;
+      width: 90%;
+      li{
+        display: inline-block;
+        max-width: 100px;
+        height: 100%;
+      }
     }
-}
-.image-showcase-swap{
-    .image-container{
-        float:right;
-        .Image-Showcase-nav{
-            left: -81px;
-        }
+    .text-option{
+      height: auto;
+    }
+    .text-content{
+      position: relative!important;
+      margin-top:4rem;
     }
     .text-container{
-        float: left;
-        .text-content{
-          left: 12px;
-        }
+      height: auto;
     }
+    .image-container{
+      height: 500px;
+    }
+  }
 }
+.image-show-case-swap{
+  .image-container{
+    float:right;
+    .Image-Showcase-nav{
+      left: -81px;
+    }
+  }
+  .text-container{
+    float: left;
+    .text-content{
+      left: 12px;
+    }
+  }
+}
+
+// *, *:before, *:after {
+//   -moz-box-shadow: 0 0 5px rgba(0,168,225,.5);
+//   -webkit-box-shadow: 0 0 5px rgba(0,168,225,.5);
+//   box-shadow: 0 0 5px rgba(0,168,225,.5);
+// }

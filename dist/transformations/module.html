@@ -1,3 +1,5 @@
+
+
 <section class="module {%Module_Type%}">
 {% if(Module_Type == "Section_Description") { %}
   <div class="row">
@@ -14,9 +16,10 @@
 
 {% if(Module_Type == "Quote_1") { %}
   <div class="row">
-    <div class="small-12 medium-8 large-9 columns end">
+    <div class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns end">
       <p>Quote 1</p>
       <h3>{%Module_Copy%}</h3>
+      <p>{%Module_Subtitle%}
       {^SubLevelPlaceHolder^}
     </div>
   </div>
@@ -24,9 +27,10 @@
   
 {% if(Module_Type == "Quote_2") { %}
   <div class="row">
-    <div class="small-12 medium-8 large-9 columns end">
-      <p>Quote 2</p>
+    <div class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns end">
+      <p>Quote 1</p>
       <h3>{%Module_Copy%}</h3>
+      <p>{%Module_Subtitle%}
       {^SubLevelPlaceHolder^}
     </div>
   </div>
@@ -34,9 +38,10 @@
  
 {% if(Module_Type == "Quote_3") { %}
   <div class="row">
-    <div class="small-12 medium-8 large-9 columns end">
-      <p>Quote 3</p>
+    <div class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns end">
+      <p>Quote 1</p>
       <h3>{%Module_Copy%}</h3>
+      <p>{%Module_Subtitle%}
       {^SubLevelPlaceHolder^}
     </div>
   </div>
@@ -68,16 +73,31 @@
 
 {% if(Module_Type == "Image_Feature_1") { %}
   <div class="row">
+  <!-- {%if(Start_New_Row == true) { %}
+    <div class="row">
+  {% } %} -->
     <div class="small-12 medium-4 large-3 columns"><p>{%Module_Copy%}</p></div>
     {^SubLevelPlaceHolder^}
-  </div>  
+ <!--  {%if(End_Row == true) { %}
+    </div>
+  {% } %}  --> 
+  </div>
 {% } #%}
 
 {% if(Module_Type == "Image_Feature_2") { %}
   <div class="row">
-    <div class="small-12 medium-4 large-3 columns"><p>{%Module_Copy%}</p></div>
+  <!-- {%if(Start_New_Row == true) { %}
+    <div class="row">
+  {% } %} -->
+  {% if (!String.IsNullOrEmpty(Left_Foundation)) { %}
+    <!--Testing-->
+    <div class="{%Left_Foundation%} columns"><p>{%Module_Copy%}</p></div>
+  {% } #%}
     {^SubLevelPlaceHolder^}
-  </div>  
+  <!-- {%if(End_Row == true) { %}
+    </div>
+  {% } %}  --> 
+  </div>
 {% } #%}
   
 {% if(Module_Type == "Hero_Module") { %}
@@ -150,7 +170,9 @@
   <p>Custom</p>
   {^SubLevelPlaceHolder^}
 {% } #%}
-  
+
+
+
 </section>
 
 <hr />

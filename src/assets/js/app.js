@@ -2,14 +2,17 @@
 
 //Image Showcase
 
+// updated to get list items from transformaiton
+
 (function($) {
   var imageShowCaseCount = 0;
   var options = [];
   var startAt = -1;
   var old = 0;
-  var itteration = 0;
+
+  var iteration = 0;
   $( ".module" ).each(function() {
-    itteration++;
+    iteration++;
     var modId = this.id;
     $("#"+modId+" .text-option" ).each(function() {
       var bg = $(this).find( '.image-container' ).css('background-image');
@@ -30,7 +33,8 @@
       $(thisIs).append('<li id=showcase-'+ startAt +'><img src="'+ options[startAt-1] +'" alt=""></li>');
       startAt++;
     }
-    if(itteration==1)
+
+    if(iteration==1)
       $("#"+modId+" .Image-Showcase-nav li").attr('old', 1);
     else
       $("#"+modId+" .Image-Showcase-nav li").attr('old', startOld);
@@ -55,6 +59,10 @@
     }
   });
 }(jQuery));
+
+
+
+
 
 //videos append using code ID from jw player - No iframe
 function appendVideo(){

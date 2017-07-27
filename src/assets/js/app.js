@@ -5,7 +5,6 @@
 (function($) {
   var imageShowCaseCount = 0;
   var options = [];
-<<<<<<< HEAD
   var startAt = -1;
   var old = 0;
   var itteration = 0;
@@ -24,22 +23,6 @@
         startAt = imageShowCaseCount;
         old = startAt;
       }
-=======
-  $( ".text-option" ).each(function(index) {
-    var bg = $(this).find( '.image-container' ).css('background-image');
-    var idval = "text-option-"+index;
-    var setId = $(this).attr('id', idval);;
-    bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
-    $(this).find( '.image-container' ).append('<ul class="Image-Showcase-nav"></ul>');
-    options.push(bg);
-  });
-
-  $( ".Image-Showcase-nav" ).each(function() {
-    var thisIs = $(this);
-    $(options).each(function(index){
-      $(thisIs).append('<li id=showcase-'+ index +'><img src="'+ options[index] +'" alt=""></li>');
-      //console.log(index);
->>>>>>> master
     });
     var thisIs = $("#"+modId+" .Image-Showcase-nav");
     var startOld = startAt;
@@ -70,11 +53,7 @@
       $( "#text-option-"+id ).addClass( "active" );
       $( "#text-option-"+id ).find( "#showcase-"+id ).find("img").css( "opacity", 0.5  );
     }
-<<<<<<< HEAD
   });
-}(jQuery));
-=======
-  }); 
 }(jQuery));
 
 //videos append using code ID from jw player - No iframe
@@ -117,16 +96,3 @@ $(document).ready(function() {
 	var videos = $('.video-wrapper');
 	$.each(videos, appendVideo);
 });
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> master

@@ -28,6 +28,11 @@ h3 {
 .custom-code {
 	position: relative;
 }
+.float-right {
+	.row div {
+		float: right;
+	}
+}
 
 @import 'hero-images.scss';
 @import 'modules.scss';

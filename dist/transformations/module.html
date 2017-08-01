@@ -1,6 +1,6 @@
 
 
-<section id ="{%DataItemIndex%}" class="module {%Module_Type%}">
+<section id ="{%DataItemIndex%}" class="module {%Module_Type%} {%Module_Classes%}">
 {% if(Module_Type == "Section_Description") { %}
 	<div class="row">
 		<div class="small-12 medium-8 large-9 columns"></div>
@@ -20,8 +20,10 @@
 			<p>Quote 1</p>
 			<h3>{%Module_Copy%}</h3>
 			<p>{%Module_Subtitle%}</p>
-			{^SubLevelPlaceHolder^}
 		</div>
+    <div class="image">
+      {^SubLevelPlaceHolder^}
+    </div>
 	</div>
 {% } #%} 
 	
@@ -31,8 +33,10 @@
 			<p>Quote 2</p>
 			<h3>{%Module_Copy%}</h3>
 			<p>{%Module_Subtitle%}</p>
-			{^SubLevelPlaceHolder^}
 		</div>
+    <div class="image">
+      {^SubLevelPlaceHolder^}
+    </div>
 	</div>
 {% } #%} 
  
@@ -95,14 +99,15 @@
 		<div class="row">
 	{% } %} -->
 	{^SubLevelPlaceHolder^}
-	{% if (!String.IsNullOrEmpty(Right_Foundation)) { %}
+	<!-- {% if (!String.IsNullOrEmpty(Right_Foundation)) { %} -->
 		<!--Testing-->
 		<!-- <div class="{%Left_Foundation%} columns"><p>{%Module_Copy%}</p></div> -->
-    <div class="{%Right_Foundation%} columns">
+    <!-- <div class="{%Right_Foundation%} columns"> -->
+    <div class="small-12 medium-4 large-3 columns">
       <h3>{%Module_Title%}</h3>
       <p>{%Module_Copy%}</p>
     </div>
-	{% } #%}
+	<!-- {% } #%} -->
 		
 	<!-- {%if(End_Row == true) { %}
 		</div>
@@ -111,9 +116,14 @@
 {% } #%}
 
 {% if(Module_Type == "Image_Feature_Full") { %}
-	<div class="row">
-		{^SubLevelPlaceHolder^}
-	</div>  
+  <div style="background: url({^SubLevelPlaceHolder^});">
+  	<div class="row" >
+      <div class="small-12 medium-4 large-3 columns">
+        <h3>{%Module_Title%}</h3>
+        <p>{%Module_Copy%}</p>
+      </div>
+  	</div>  
+  </div>
 {% } %}
 
 

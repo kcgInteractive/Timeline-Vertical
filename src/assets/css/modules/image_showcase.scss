@@ -17,6 +17,7 @@
   }
   .image-container{
 	background-size: cover;
+	background-position: center center;
 	height:100%;
 	position: relative;
 	.Image-Showcase-nav{
@@ -208,12 +209,16 @@
 	}
   }
 }
-.image-show-case-swap{
+.image-showcase-swap{
   .image-container{
 	float:right;
 	.Image-Showcase-nav{
 	  left: -81px;
 	}
+  }
+  .optional-copy {
+  	left: 0;
+  	right: auto;
   }
   .text-container{
 	float: left;

@@ -15,10 +15,7 @@
 	{% } %}
 
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Feature_Full") { %}
-		<div class="small-12 columns image-wrapper"><img src="/kochsandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
-		{% if (!String.IsNullOrEmpty(Media_Description)) { %}
-			<p>{%Media_Description%}</p>
-		{% } %}
+		'/kochsandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}'
 	{% } %}
 
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Showcase_1") { %}
@@ -54,6 +51,14 @@
 	{% } %}
 
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Section_Description") { %}
+		<div class="image-wrapper"><img src="/kochsandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
+	{% } %}
+	
+	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Quote_1") { %}
+		<div class="image-wrapper"><img src="/kochsandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
+	{% } %}
+
+	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Quote_2") { %}
 		<div class="image-wrapper"><img src="/kochsandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
 	{% } %}
 

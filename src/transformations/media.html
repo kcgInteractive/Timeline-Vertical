@@ -18,11 +18,16 @@
 		'/kochsandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}'
 	{% } %}
 
+	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Text_Module_White") { %}
+		<img src="/kochsandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/>
+	{% } %}
+
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Showcase_1") { %}
 		<div class="text-option">
 			<div class="large-6 medium-6 small-12 columns end image-container" style="background-image: url('/KochSandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}');">&nbsp;</div>
 			<div class="large-6 medium-6 small-12 columns end text-container">
 				<div class="optional-copy">
+					<h3>{%Documents[NodeAliasPath].Parent.GetValue("Module_Title")%}</h3>
 		            <p>{%Documents[NodeAliasPath].Parent.GetValue("Module_Copy")%}</p>
 		        </div>
 				<div class="text-content">

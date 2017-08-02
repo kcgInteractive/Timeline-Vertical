@@ -9,6 +9,7 @@
   var options = [];
   var startAt = -1;
   var old = 0;
+
   var iteration = 0;
   $( ".module" ).each(function() {
     iteration++;
@@ -32,6 +33,7 @@
       $(thisIs).append('<li id=showcase-'+ startAt +'><img src="'+ options[startAt-1] +'" alt=""></li>');
       startAt++;
     }
+
     if(iteration==1)
       $("#"+modId+" .Image-Showcase-nav li").attr('old', 1);
     else
@@ -102,15 +104,3 @@ $(document).ready(function() {
 	var videos = $('.video-wrapper');
 	$.each(videos, appendVideo);
 });
-
-
-
-
-
-
-
-
-
-
-
-

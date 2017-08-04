@@ -33,6 +33,9 @@ h3 {
 		float: right;
 	}
 }
+.relative {
+	position: relative;
+}
 
 @import 'hero-images.scss';
 @import 'modules.scss';

@@ -22,8 +22,9 @@ h3 {
 	font-size: 1.75rem;
 	color: $gray;
 	font-weight: 300;
+	line-height: 1.35;
 }
-.zoneMenu {
+.topBlock {
 	position: fixed;
 }
 .custom-code {
@@ -36,6 +37,24 @@ h3 {
 }
 .relative {
 	position: relative;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.blue {
+	color: $blue;
+}
+.dark-blue {
+	color: $dark-blue;
+}
+.gray {
+	color: $gray;
+}
+.light-gray {
+	color: $light-gray;
+}
+.white {
+	color: #fff;
 }
 
 @import 'hero-images.scss';

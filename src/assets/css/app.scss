@@ -56,6 +56,14 @@ h3 {
 .white {
 	color: #fff;
 }
+.text-noBG {
+	&.Image_Feature_Full {
+		.text-column {
+			background-color: transparent;	
+			color: #fff;
+		}
+	}
+}
 
 @import 'hero-images.scss';
 @import 'modules.scss';

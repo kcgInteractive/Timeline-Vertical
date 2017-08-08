@@ -30,7 +30,7 @@
     var thisIs = $("#"+modId+" .Image-Showcase-nav");
     var startOld = startAt;
     while (startAt <= options.length){
-      $(thisIs).append('<li id=showcase-'+ startAt +'><img src="'+ options[startAt-1] +'" alt=""></li>');
+      $(thisIs).append('<li id="showcase-'+ startAt +'" style="background-image: url(' + options[startAt-1] + ');"></li>');
       startAt++;
     }
 
@@ -69,13 +69,14 @@ function appendVideo(){
     var currentVideo = $(this);
     var myVideoID = $(this).attr('data-video');
     var myVideoAspect = $(this).attr('data-aspect');
-    console.log(currentVideo);
+    var moduleID = currentVideo.closest('.module').attr('id');
+    console.log(moduleID);
 
-    currentVideo.append('<div id="video"></div>');
+    currentVideo.append('<div id="video-' + moduleID + '"></div>');
 
     // var moduleString = "jwvid_" + appendModuleOrder.toString();
     // $('#' + appendModuleOrder).append('<div class="video-wrapper"><div id="' + moduleString + '"></div></div>');
-    jwplayer("video").setup({
+    jwplayer('video-'+ moduleID).setup({
       file: "http://video.kochcreativegroupdev.com/manifests/" + myVideoID + ".m3u8",
       image: "http://video.kochcreativegroupdev.com/thumbs/" + myVideoID + ".jpg",
       aspectratio:myVideoAspect,

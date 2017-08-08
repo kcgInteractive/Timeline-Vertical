@@ -93,11 +93,11 @@
 	{% } %}
 
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Video_Feature_3") { %}
-		<a href="#" class="play-button play-button-1" video-id="{%Option_Link%}"></a>
+		<a href="#" class="play-button play-button-1" data-video="{%Option_Link%}" data-aspect="{%Media_Aspect%}"></a>
 	{% } %}
 
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Video_Feature_4") { %}
-		<a href="#" class="play-button play-button-1" video-id="{%Option_Link%}"></a>
+		<a href="#" class="play-button play-button-1" data-video="{%Option_Link%}" data-aspect="{%Media_Aspect%}"></a>
 	{% } %}
 	
 {% } #%}

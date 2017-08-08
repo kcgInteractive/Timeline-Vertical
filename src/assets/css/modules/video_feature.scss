@@ -1,7 +1,7 @@
 .Video_Feature_2 {
-	.video-wrapper {
-		max-width: 350px;
-	}
+  .video-wrapper {
+    max-width: 350px;
+  }
 }
 
 .Video_Feature_3{
@@ -14,12 +14,10 @@
     -o-background-size: cover;
     background-size: cover;
   }
-  .white{
-    color: white;
-  }
-  .video-thum{	
+  .video-thum{  
     height: 150px;
-    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
     border: 1px solid #979797;
     background-color: #D8D8D8;
     background-repeat: round;
@@ -36,34 +34,46 @@
   }
   .text-option{
     display: block;
+    max-width: 80%;
+    margin: 0 auto;
     h2{
       display: block;
-      font-family: "proxima-nova", sans-serif;	
-      font-size: 28px;	
-      line-height: 38px;	 
+      font-family: "proxima-nova", sans-serif;    
+      color: #444444; 
+      font-family: Museo; 
+      font-size: 28px;  
+      line-height: 31px;
     }
     p{
       margin-top:1rem;
-      font-family: "proxima-nova", sans-serif;	
-      font-size: 14px;	
-      font-weight: 600;	
+      font-family: "proxima-nova", sans-serif;  
+      font-size: 14px;  
+      font-weight: 600; 
       line-height: 27px;
     }
   }
   .quote-option{
-    display: none;
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
     p:nth-child(1) {
-      color: #6E97A2;	
-      font-family: Museo;	
-      font-size: 28px;	
+      color: #6E97A2; 
+      font-family: Museo; 
+      font-size: 28px;  
       line-height: 38px;
     }
     p:nth-child(2) {
-      color: #B7B7B7;	
-      font-family: "proxima-nova", sans-serif;	
-      font-size: 14px;	
+      color: #B7B7B7; 
+      font-family: "proxima-nova", sans-serif;  
+      font-size: 14px;  
       line-height: 17px;
     }
+  }
+}
+
+.white{
+  p,h2,h2,h3,h4{
+    color: white!important; 
   }
 }
 
@@ -76,11 +86,10 @@
   display:table-cell;
   vertical-align:middle;
 }
+
 .center-text{
   text-align: center;
 }
-
-
 .Video_Feature_4{
   .background {
     background-repeat:no-repeat;
@@ -106,21 +115,21 @@
     p{
       padding: 0;
       margin: 0;
-      color: #444444;	
-      font-family: "proxima-nova", sans-serif;	
-      font-size: 14px;	
+      color: #444444; 
+      font-family: "proxima-nova", sans-serif;  
+      font-size: 14px;  
       line-height: 27px;
     }
     .date{
-      color: #96C7D4;	
-      font-family: Museo;	
-      font-size: 18px;	
+      color: #96C7D4; 
+      font-family: Museo; 
+      font-size: 18px;  
       line-height: 18px;
     }
     h3{
-      color: #444444;	
-      font-family: Museo;	
-      font-size: 28px;	
+      color: #444444; 
+      font-family: Museo; 
+      font-size: 28px;  
       line-height: 38px;
     }
   }

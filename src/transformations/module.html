@@ -100,19 +100,8 @@
 	{% } #%}
 
 	{% if(Module_Type == "Video_Feature_4") { %}
-	<div class="background" style="background-image: url('/KochSandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}');">
-		<div class="row ">
-			<div class="v-align-outer">
-				<div class="v-align-inner">
-					<div class="content large-4 medium-4 small-12 large-offset-4 medium-offset-4 small-offset-0 columns end">
-						{^SubLevelPlaceHolder^}
-						<p class="date">{%Module_Year%}</p>
-						<h3>{%Module_Title%}</h3>
-						<p>{%Module_Copy%}</p>
-					</div>
-				</div>
-			</div>
-		</div>
+	<div class="row ">
+		{^SubLevelPlaceHolder^}
 	</div>
 	{% } #%}
 

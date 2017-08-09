@@ -38,18 +38,18 @@
     margin: 0 auto;
     h2{
       display: block;
-      font-family: "proxima-nova", sans-serif;   
       color: #444444; 
-      font-family: Museo; 
+      font-family: $museo; 
       font-size: 28px;  
       line-height: 31px;
+      font-weight: 300;
     }
     p{
       margin-top:1rem;
-      font-family: "proxima-nova", sans-serif; 
-      font-size: 14px;  
-      font-weight: 600; 
-      line-height: 27px;
+      font-family: $sans; 
+      // font-size: 14px;  
+      // font-weight: 600; 
+      // line-height: 27px;
     }
   }
   .quote-option{
@@ -58,13 +58,13 @@
     margin: 0 auto;
     p:nth-child(1) {
       color: #6E97A2; 
-      font-family: Museo; 
+      font-family: $museo; 
       font-size: 28px;  
       line-height: 38px;
     }
     p:nth-child(2) {
       color: #B7B7B7; 
-      font-family: "proxima-nova", sans-serif; 
+      font-family: $sans; 
       font-size: 14px;  
       line-height: 17px;
     }
@@ -99,19 +99,19 @@
       padding: 0;
       margin: 0;
       color: #444444; 
-      font-family: "proxima-nova", sans-serif; 
+      font-family: $sans; 
       font-size: 14px;  
       line-height: 27px;
     }
     .date{
       color: #96C7D4; 
-      font-family: Museo; 
+      font-family: $museo; 
       font-size: 18px;  
       line-height: 18px;
     }
     h3{
       color: #444444; 
-      font-family: Museo; 
+      font-family: $museo; 
       font-size: 28px;  
       line-height: 38px;
     }
@@ -156,10 +156,10 @@
     margin-bottom: 1rem;
   }
   p{
-    color: #444444; 
-    font-family: "proxima-nova", sans-serif;  
-    font-size: 16px;  
-    line-height: 27px;
+    // color: #444444; 
+    font-family: $sans;  
+    // font-size: 16px;  
+    // line-height: 27px;
     text-align: center;
   }
   .content{
@@ -169,10 +169,11 @@
     width: 100%;
     h3{
       color: #00A8E1; 
-      font-family: Museo; 
-      font-size: 20px;  
-      line-height: 18px;  
+      font-family: $museo; 
+      font-size: 1.125rem;    
       text-align: center;
+      font-weight: 500;
+      margin: 0;
     }
     a{
       margin-bottom: 2rem;

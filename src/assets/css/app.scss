@@ -107,9 +107,9 @@ h3 {
   -moz-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   &.play-button-1 {
-    color:$dark-blue;
+    color: #002D5B;
     border: 1px solid #00a8e1;
-    background: #fff;
+    background: #fff;;
     &::before {
       content: "\f04b";
       position: absolute;

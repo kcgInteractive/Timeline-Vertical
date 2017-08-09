@@ -14,7 +14,7 @@
     -o-background-size: cover;
     background-size: cover;
   }
-  .video-thum{  
+  .video-thumb{  
     height: 150px;
     max-width: 80%;
     margin: 0 auto;
@@ -69,26 +69,6 @@
       line-height: 17px;
     }
   }
-}
-
-.white{
-  p,h2,h2,h3,h4{
-    color: white!important; 
-  }
-}
-
-.v-align-outer {
-  display:table;
-  height:100%;
-  width:100%;
-}
-.v-align-inner {
-  display:table-cell;
-  vertical-align:middle;
-}
-
-.center-text{
-  text-align: center;
 }
 .Video_Feature_4{
   .background {
@@ -183,7 +163,7 @@
     text-align: center;
   }
   .content{
-    POSITION: absolute;
+    position: absolute;
     bottom: 0;
     text-align: center;
     width: 100%;

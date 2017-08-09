@@ -25,6 +25,7 @@
 			{^SubLevelPlaceHolder^}
 		</div>
 	</div>
+
 	{% } #%} 
 	
 	{% if(Module_Type == "Quote_2") { %}
@@ -85,17 +86,15 @@
 					{^SubLevelPlaceHolder^}
 				</div>
 			</div>
-			{% if(!String.IsNullOrEmpty == Module_Title) { %}
+			
 			<div class="text-option">
 				<h2>{%Module_Title%}</h2>
-				{%Module_Copy%}
+				<p>{%Module_Copy%}</p>
 			</div>
-			{% } #%}
-			{% if(String.IsNullOrEmpty == Module_Title) { %}
-			<div class="quote-option">
-				{%Module_Copy%}
-			</div>
-			{% } #%}
+			
+			<!-- <div class="quote-option">
+				<p>{%Module_Copy%}</p>
+			</div> -->
 		</div>
 	</div>
 	{% } #%}
@@ -109,7 +108,7 @@
 						{^SubLevelPlaceHolder^}
 						<p class="date">{%Module_Year%}</p>
 						<h3>{%Module_Title%}</h3>
-						{%Module_Copy%}
+						<p>{%Module_Copy%}</p>
 					</div>
 				</div>
 			</div>
@@ -126,7 +125,7 @@
 					<h3>{%Module_Title%}</h3>
 				</div>
 			</div>
-			{%Module_Copy%}
+			<p>{%Module_Copy%}</p>
 		</div>
 	</div>
 	{% } #%}

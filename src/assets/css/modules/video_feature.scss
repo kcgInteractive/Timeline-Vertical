@@ -160,26 +160,33 @@
 
 .Video_Feature_4.center {
   .row{
-    position: relative;
+    //position: relative;
     min-height: 400px;
   }
   .background{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
   }
-  .content{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  .content {
+    margin: 5rem 0;
+    margin-left: 25%;
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
   }
   .play-button{
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    padding: 26px;
+    // position: absolute;
+    // left: 50%;
+    // top: 20%;
+    // transform: translate(-50%, -50%);
   }
   @media screen and (max-width: 39.9375em) {
 

@@ -58,6 +58,23 @@ h3 {
 }
 .white {
 	color: #fff;
+	p,h2,h2,h3,h4{
+	    color: white!important; 
+	}
+}
+
+.v-align-outer {
+  display:table;
+  height:100%;
+  width:100%;
+}
+.v-align-inner {
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.center-text{
+  text-align: center;
 }
 .text-noBG {
 	&.Image_Feature_Full {

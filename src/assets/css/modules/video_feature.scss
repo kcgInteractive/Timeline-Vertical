@@ -84,8 +84,9 @@
     -o-background-size: cover;
     background-size: cover;
   }
-  .Div{
-    height: 400px;
+  img{
+    min-height: 100%;
+    min-width: 100%;
   }
   .row{
     position: relative;
@@ -93,16 +94,15 @@
   }
   .content{
     position: relative;
-    padding: 5rem;
+    padding-left: 10rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 400px;
     .play-button{
       position: absolute;
       left:0%;
       top: 50%;
-      transform: translate(20%, -50%);
+      transform: translate(100%, -50%);
     }
     p{
       padding: 0;
@@ -126,34 +126,39 @@
     }
   }
   @media screen and (max-width: 39.9375em) {
+   .content{
+    padding-left: 2rem;
     .play-button{
-      position: absolute;
-      left:50%;
-      top: 50%;
-      transform: translate(-50%, 100%);
-    }
-    .content{
-      padding-left: 2rem;
+      position: relative;
+      margin: 0 auto;
+      left: initial;
+      top: initial;
+      transform: initial;
+      margin-bottom: 0.3rem;
     }
   }
+}
 }
 
 .Video_Feature_4.left {
   .content{
     float: left;
+    padding-left: 8rem;
   }
   .background{
     float: right;
   }
   @media screen and (max-width: 39.9375em) {
-    .play-button{
-      position: absolute;
-      left:50%;
-      top: 50%;
-      transform: translate(-50%, 100%);
-    }
     .content{
       padding-left: 2rem;
+      .play-button{
+        position: relative;
+        margin: 0 auto;
+        left: initial;
+        top: initial;
+        transform: initial;
+        margin-bottom: 0.3rem;
+      }
     }
   }
 }
@@ -168,6 +173,10 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    img{
+      min-height: 100%;
+      min-width: 100%;
+    }
   }
   .content{
     position: absolute;
@@ -176,10 +185,12 @@
     transform: translate(-50%, -50%);
   }
   .play-button{
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    margin: 0 auto;
+    left: initial;
+    top: initial;
+    transform: initial;
+    margin-bottom: 0.3rem;
   }
   @media screen and (max-width: 39.9375em) {
 

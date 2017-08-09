@@ -85,13 +85,13 @@
 					{^SubLevelPlaceHolder^}
 				</div>
 			</div>
-			{% if(Module_Title != "null") { %}
+			{% if(!String.IsNullOrEmpty == Module_Title) { %}
 			<div class="text-option">
 				<h2>{%Module_Title%}</h2>
 				{%Module_Copy%}
 			</div>
 			{% } #%}
-			{% if(Module_Title == "null") { %}
+			{% if(String.IsNullOrEmpty == Module_Title) { %}
 			<div class="quote-option">
 				{%Module_Copy%}
 			</div>

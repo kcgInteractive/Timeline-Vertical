@@ -70,6 +70,11 @@
     }
   }
 }
+
+.center-text{
+  text-align: center;
+}
+
 .Video_Feature_4{
   .background {
     background-repeat:no-repeat;
@@ -82,18 +87,22 @@
   .Div{
     height: 400px;
   }
-  div:nth-child(2), .row {
+  .row{
+    position: relative;
     padding: 2rem 0;
-    height: 450px;
-    // min-height: 450px;
   }
   .content{
     position: relative;
-    padding: 1rem;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
     .play-button{
-      display: block;
-      margin: 0 auto;
-      margin-bottom: 1rem;
+      position: absolute;
+      left:0%;
+      top: 50%;
+      transform: translate(20%, -50%);
     }
     p{
       padding: 0;
@@ -116,30 +125,64 @@
       line-height: 38px;
     }
   }
+  @media screen and (max-width: 39.9375em) {
+    .play-button{
+      position: absolute;
+      left:50%;
+      top: 50%;
+      transform: translate(-50%, 100%);
+    }
+    .content{
+      padding-left: 2rem;
+    }
+  }
 }
 
-.left-center-mid.left {
+.Video_Feature_4.left {
   .content{
-    margin-left: 4rem;
+    float: left;
+  }
+  .background{
+    float: right;
+  }
+  @media screen and (max-width: 39.9375em) {
+    .play-button{
+      position: absolute;
+      left:50%;
+      top: 50%;
+      transform: translate(-50%, 100%);
+    }
+    .content{
+      padding-left: 2rem;
+    }
+  }
+}
+
+.Video_Feature_4.center {
+  .row{
+    position: relative;
+    min-height: 400px;
+  }
+  .background{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   .play-button{
     position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(-100%, -50%);
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
   }
-}
+  @media screen and (max-width: 39.9375em) {
 
-.left-center-mid.right {
-  .content{
-    float: right!important;
-    margin: 0;
-  }
-  .play-button{
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(-100%, -50%);
   }
 }
 

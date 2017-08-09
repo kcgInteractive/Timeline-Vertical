@@ -97,7 +97,18 @@
 	{% } %}
 
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Video_Feature_4") { %}
-		<a href="#" class="play-button play-button-1" data-video="{%Option_Link%}" data-aspect="{%Media_Aspect%}"></a>
+		{%if(Media_Type == "graphic") { %}
+			<div class="background Div large-6 medium-6 small-12 large-offset-0 medium-offset-0 small-offset-0 columns end" style="background-image: url(/kochsandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%});">
+    		</div>
+		{% } #%}
+		{%if(Media_Type == "link") { %}
+			<div class="content large-6 medium-6 small-12 large-offset-0 medium-offset-0 small-offset-0 columns end">
+      		<a href="#" class="play-button play-button-1"></a>
+      		<p class="date">{%Module_Year%}</p>
+      		<h3>{%Module_Title%}</h3>
+      		<p>{%Module_Copy</p>
+    		</div>
+		{% } #%}
 	{% } %}
 
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Video_Feature_5") { %}

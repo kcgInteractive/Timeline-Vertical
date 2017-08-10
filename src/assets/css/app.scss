@@ -20,12 +20,19 @@ p {
 h1, h2, h3, h4, h5, h6 {
 	color: $gray;
 }
-h3 {
+h2 {
 	font-family: $museo;
 	font-size: 1.75rem;
 	color: $gray;
 	font-weight: 300;
 	line-height: 1.35;
+}
+h3 {
+	font-family: $museo;
+	font-size: 1.5rem;
+	color: $gray;
+	font-weight: 500;
+	line-height: 1.5;
 }
 .topBlock {
 	position: fixed;
@@ -60,6 +67,31 @@ h3 {
 	color: #fff;
 	p,h2,h2,h3,h4{
 	    color: white!important; 
+	}
+}
+.h3-110 {
+	h3 {
+		width: 110%;
+	}
+}
+.h3-120 {
+	h3 {
+		width: 120%;
+	}
+}
+.h3-130 {
+	h3 {
+		width: 130%;
+	}
+}
+.h3-140 {
+	h3 {
+		width: 140%;
+	}
+}
+.h3-150 {
+	h3 {
+		width: 150%;
 	}
 }
 

@@ -1,7 +1,7 @@
 
 
 <section id ="{%DataItemIndex%}" class="module {%Module_Type%} {%Module_Classes%}">
-{% if(Module_Type == "Section_Description") { %}
+	{% if(Module_Type == "Section_Description") { %}
 	<div class="row">
 		<div class="small-12 medium-8 large-9 columns"></div>
 		<div class="small-12 medium-4 large-3 columns">
@@ -12,48 +12,49 @@
 			<p>{%Module_Subtitle%}</p>
 		</div>
 	</div>
-{% } #%}
+	{% } #%}
 
-{% if(Module_Type == "Quote_1") { %}
+	{% if(Module_Type == "Quote_1") { %}
 	<div class="row">
 		<div class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns end">
 			<p>Quote 1</p>
 			{%Module_Copy%}
 			<p>{%Module_Subtitle%}</p>
 		</div>
-    <div class="image">
-      {^SubLevelPlaceHolder^}
-    </div>
+		<div class="image">
+			{^SubLevelPlaceHolder^}
+		</div>
 	</div>
-{% } #%} 
+
+	{% } #%} 
 	
-{% if(Module_Type == "Quote_2") { %}
+	{% if(Module_Type == "Quote_2") { %}
 	<div class="row">
 		<div class="small-12 medium-8 medium-offset-2 large-5 large-offset-1 columns end">
 			<p>Quote 2</p>
 			<h3>{%Module_Copy%}</h3>
 			<p>{%Module_Subtitle%}</p>
 		</div>
-    <div class="image">
-      {^SubLevelPlaceHolder^}
-    </div>
+		<div class="image">
+			{^SubLevelPlaceHolder^}
+		</div>
 	</div>
-{% } #%} 
- 
-{% if(Module_Type == "Quote_3") { %}
+	{% } #%} 
+
+	{% if(Module_Type == "Quote_3") { %}
 	<div class="row">
 		<div class="small-12 medium-3 columns">
 			<p>Quote 3</p>
 			<h3>{%Module_Copy%}</h3>
 			<p>{%Module_Subtitle%}</p>
-    </div>
-    <div class="small-12 medium-8 columns">
+		</div>
+		<div class="small-12 medium-8 columns">
 			{^SubLevelPlaceHolder^}
 		</div>
 	</div>
-{% } #%}
+	{% } #%}
 	
-{% if(Module_Type == "Video_Feature_1") { %}
+	{% if(Module_Type == "Video_Feature_1") { %}
 	<p>Video Feature 1</p>
 	<div class="row">
 		<div class="small-12 medium-4 large-3 columns">
@@ -63,9 +64,9 @@
 		</div>
 		{^SubLevelPlaceHolder^}
 	</div> 
-{% } #%}
+	{% } #%}
 	
-{% if(Module_Type == "Video_Feature_2") { %}
+	{% if(Module_Type == "Video_Feature_2") { %}
 	<p>Video Feature 2</p>
 	<div class="row">
 		<div class="small-12 medium-4 large-3 columns">
@@ -75,139 +76,180 @@
 		</div>
 		{^SubLevelPlaceHolder^}
 	</div> 
-{% } #%}
+	{% } #%}
+	<!-- https://codepen.io/ddebolt/pen/wqzaoa?editors=1100 -->
+	{% if(Module_Type == "Video_Feature_3") { %}
+	<div class="row">
+		<div class="large-4 medium-4 small-12 large-offset-4 medium-offset-4 small-offset-0 columns end center">
+			<div class="video-thumb">
+				<div class="background" style="background-image: url('/KochSandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}');">
+					{^SubLevelPlaceHolder^}
+				</div>
+			</div>
+			
+			<div class="text-option">
+				<h2>{%Module_Title%}</h2>
+				<p>{%Module_Copy%}</p>
+			</div>
+			
+			<!-- <div class="quote-option">
+				<p>{%Module_Copy%}</p>
+			</div> -->
+		</div>
+	</div>
+	{% } #%}
 
-{% if(Module_Type == "Image_Feature_Right") { %}
+	{% if(Module_Type == "Video_Feature_4") { %}
+	<div class="row" data-equalizer>
+		{^SubLevelPlaceHolder^}
+	</div>
+	{% } #%}
+
+	{% if(Module_Type == "Video_Feature_5") { %}
+	<div class="row">
+		<div class="large-3 medium-3 small-12 large-offset-4 medium-offset-4 small-offset-0 columns end" style="position: relative;left: 24px;">
+			<div class="background" style="background-image: url('/KochSandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}');">
+				<div class="content">
+					{^SubLevelPlaceHolder^}
+					<h3>{%Module_Title%}</h3>
+				</div>
+			</div>
+			<p>{%Module_Copy%}</p>
+		</div>
+	</div>
+	{% } #%}
+
+	{% if(Module_Type == "Image_Feature_Right") { %}
 	<div class="row">
 	<!-- {%if(Start_New_Row == true) { %}
 		<div class="row">
-	{% } %} -->
-		<div class="small-12 medium-4 large-3 columns">
-      <h3>{%Module_Title%}</h3>
-      <p>{%Module_Copy%}</p>
-    </div>
-		{^SubLevelPlaceHolder^}
+			{% } %} -->
+			<div class="small-12 medium-4 large-3 columns">
+				<h3>{%Module_Title%}</h3>
+				<p>{%Module_Copy%}</p>
+			</div>
+			{^SubLevelPlaceHolder^}
  <!--  {%if(End_Row == true) { %}
 		</div>
-	{% } %}  --> 
+		{% } %}  --> 
 	</div>
-{% } #%}
+	{% } #%}
 
-{% if(Module_Type == "Image_Feature_Left") { %}
+	{% if(Module_Type == "Image_Feature_Left") { %}
 	<div class="row">
 <!-- 	{%if(Start_New_Row == true) { %}
 		<div class="row">
-	{% } %} -->
-	{^SubLevelPlaceHolder^}
-	<!-- {% if (!String.IsNullOrEmpty(Right_Foundation)) { %} -->
-		<!--Testing-->
-		<!-- <div class="{%Left_Foundation%} columns"><p>{%Module_Copy%}</p></div> -->
-    <!-- <div class="{%Right_Foundation%} columns"> -->
-    <div class="small-12 medium-4 large-3 columns">
-      <h3>{%Module_Title%}</h3>
-      <p>{%Module_Copy%}</p>
-    </div>
-	<!-- {% } #%} -->
-		
+			{% } %} -->
+			{^SubLevelPlaceHolder^}
+			<!-- {% if (!String.IsNullOrEmpty(Right_Foundation)) { %} -->
+			<!--Testing-->
+			<!-- <div class="{%Left_Foundation%} columns"><p>{%Module_Copy%}</p></div> -->
+			<!-- <div class="{%Right_Foundation%} columns"> -->
+			<div class="small-12 medium-4 large-3 columns">
+				<h3>{%Module_Title%}</h3>
+				<p>{%Module_Copy%}</p>
+			</div>
+			<!-- {% } #%} -->
+
 	<!-- {%if(End_Row == true) { %}
 		</div>
-	{% } %}  --> 
+		{% } %}  --> 
 	</div>
-{% } #%}
+	{% } #%}
 
-{% if(Module_Type == "Image_Feature_Full") { %}
-  {^SubLevelPlaceHolder^}
-  	<div class="row" >
-      <div class="small-12 medium-4 large-4 columns">
-        <div class="text-column">
-          <h3>{%Module_Title%}</h3>
-          <p>{%Module_Copy%}</p>
-        </div>
-      </div>
-  	</div>  
-  </div>
+	{% if(Module_Type == "Image_Feature_Full") { %}
+	{^SubLevelPlaceHolder^}
+	<div class="row" >
+		<div class="small-12 medium-4 large-4 columns">
+			<div class="text-column">
+				<h3>{%Module_Title%}</h3>
+				<p>{%Module_Copy%}</p>
+			</div>
+		</div>
+	</div>  
+</div>
 {% } %}
 
 
-	
+
 {% if(Module_Type == "Hero_Module") { %}
-	<p>Hero Module</p>
-	{^SubLevelPlaceHolder^}
+<p>Hero Module</p>
+{^SubLevelPlaceHolder^}
 {% } #%}
-	
+
 {% if(Module_Type == "Image_Showcase_1") { %}
-	<div class="row" style="position: relative;">
-		{^SubLevelPlaceHolder^}
-	</div>
+<div class="row" style="position: relative;">
+	{^SubLevelPlaceHolder^}
+</div>
 {% } #%}
-	
+
 {% if(Module_Type == "Image_Showcase_2") { %}
-	<div class="row" style="position: relative;">
-		{^SubLevelPlaceHolder^}
-	</div>
+<div class="row" style="position: relative;">
+	{^SubLevelPlaceHolder^}
+</div>
 {% } #%}
-	
+
 {% if(Module_Type == "Text_Module_Black") { %}
-	<p>Text Module Black</p>
-	<div class="row">
-		<div class="small-12 medium-4 large-3 columns">
-			<p>{%Module_Year%}
+<p>Text Module Black</p>
+<div class="row">
+	<div class="small-12 medium-4 large-3 columns">
+		<p>{%Module_Year%}
 			<h3>{%Module_Title%}</h3>
 			<p>{%Module_Copy%}</p>
 			{^SubLevelPlaceHolder^}
 		</div>
 	</div>
 	{% } #%}
-	
-{% if(Module_Type == "Text_Module_White") { %}
+
+	{% if(Module_Type == "Text_Module_White") { %}
 	<p>Text Module White</p>
-  <div class="row">
-    <div class="small-12 medium-12 large-6 columns">
-      <div class="relative">
-        {^SubLevelPlaceHolder^}
-        <div class="module-text">
-          <p>{%Module_Year%}</p>
-          <h3>{%Module_Title%}</h3>
-          <p>{%Module_Copy%}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-{% } #%}
-	
-{% if(Module_Type == "Year_Text_1") { %}
+	<div class="row">
+		<div class="small-12 medium-12 large-6 columns">
+			<div class="relative">
+				{^SubLevelPlaceHolder^}
+				<div class="module-text">
+					<p>{%Module_Year%}</p>
+					<h3>{%Module_Title%}</h3>
+					<p>{%Module_Copy%}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% } #%}
+
+	{% if(Module_Type == "Year_Text_1") { %}
 	<p>Year Text 1</p>
 	{^SubLevelPlaceHolder^}
-{% } #%}
-	
-{% if(Module_Type == "Year_Text_2") { %}
+	{% } #%}
+
+	{% if(Module_Type == "Year_Text_2") { %}
 	<p>Year Text 2</p>
 	{^SubLevelPlaceHolder^}
-{% } #%}
-	
-{% if(Module_Type == "Image_Caption_One") { %}
+	{% } #%}
+
+	{% if(Module_Type == "Image_Caption_One") { %}
 	<p>Image Caption One</p>
 	{^SubLevelPlaceHolder^}
-{% } #%}
-	
-{% if(Module_Type == "Image_Caption_Two") { %}
+	{% } #%}
+
+	{% if(Module_Type == "Image_Caption_Two") { %}
 	<p>Image Caption Two</p>
 	{^SubLevelPlaceHolder^}
-{% } #%}
-	
-{% if(Module_Type == "Custom_Biography") { %}
+	{% } #%}
+
+	{% if(Module_Type == "Custom_Biography") { %}
 	<p>Custom Biography</p>
 	{^SubLevelPlaceHolder^}
-{% } #%}
-	
-{% if(Module_Type == "Custom") { %}
+	{% } #%}
+
+	{% if(Module_Type == "Custom") { %}
 	<p>Custom</p>
 	{^SubLevelPlaceHolder^}
-{% } #%}
+	{% } #%}
 
 
 
 </section>
 
 <!-- <hr />
- -->
+-->

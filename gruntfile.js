@@ -50,7 +50,7 @@ module.exports = function(grunt) {
 
     copy: {
       images: {
-        cwd: 'src/assets/img',  // set working folder / root to copy
+        cwd: 'src/assets/img/',  // set working folder / root to copy
         src: '**/*',           // copy all files and subfolders
         dest: 'dist/assets/img/',    // destination folder
         expand: true           // required when using cwd

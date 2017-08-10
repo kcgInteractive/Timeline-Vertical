@@ -65,14 +65,15 @@
 
 
 //videos append using code ID from jw player - No iframe
-function appendVideo(){
-    var currentVideo = $(this);
-    var myVideoID = $(this).attr('data-video');
-    var myVideoAspect = $(this).attr('data-aspect');
+function appendVideo(button){
+    var currentVideo = button;
+    var myVideoID = button.attr('data-video');
+    var myVideoAspect = button.attr('data-aspect');
     var moduleID = currentVideo.closest('.module').attr('id');
-    console.log(moduleID);
+    console.log(currentVideo);
 
-    currentVideo.append('<div id="video-' + moduleID + '"></div>');
+    $('.video').html('');
+    $('.video').append('<div id="video-' + moduleID + '"></div>');
 
     // var moduleString = "jwvid_" + appendModuleOrder.toString();
     // $('#' + appendModuleOrder).append('<div class="video-wrapper"><div id="' + moduleString + '"></div></div>');
@@ -101,12 +102,19 @@ function appendVideo(){
       // }
     });
 } 
-$(document).ready(function() {
-	var videos = $('.video-wrapper');
-	$.each(videos, appendVideo);
+// $(document).ready(function() {
+// 	var videos = $('.video-wrapper');
+// 	$.each(videos, appendVideo);
+// });
+$('.play-button').on('click', function() {
+	var button =$(this);
+	$('.video-wrapper').addClass('active');
+	appendVideo(button);
 });
 
-
+$('.video-wrapper .close-button').on('click', function() {
+	$('.video-wrapper').removeClass('active');
+});
 /*--------------------------------------------------------------
 Draggable
 alternative to jQuery UI’s draggable

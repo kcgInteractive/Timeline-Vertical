@@ -59,6 +59,11 @@
 			<img src="/kochsandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}">
 		</div>
 	{% } #%}
+	
+	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Video_Feature_5") { %}
+		<div class="background" style="background-image: url('/KochSandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}');">
+	{% } #%}
+	
 
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Section_Description") { %}
 		<div class="image-wrapper"><img src="/kochsandbox/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
@@ -111,7 +116,13 @@
 	{% } %}
 
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Video_Feature_5") { %}
-		<button type="button" class="play-button play-button-1" data-video="{%Option_Link%}" data-aspect="{%Media_Aspect%}"></button>
+			<div class="content">
+				<button type="button" class="play-button play-button-1" data-video="{%Option_Link%}" data-aspect="{%Media_Aspect%}"></button>
+				<h3>{%Documents[NodeAliasPath].Parent.GetValue("Module_Title")%}</h3>
+			</div>
+		</div>
+		<p>{%Documents[NodeAliasPath].Parent.GetValue("Module_Copy")%}</p>
+
 	{% } %}
 	
 {% } #%}

@@ -1,3 +1,37 @@
+.video-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255,255,255,0.9);
+  visibility: hidden;
+  opacity: 0;
+  z-index: -10000;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 10000;
+  }
+  .video {
+    position: absolute;
+    width: 80%;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .close-button{
+    font-size: 2.5rem;
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    cursor: pointer;
+    color: $dark-blue;
+  } font-size: 2.5rem;
+}
+
 .Video_Feature_2 {
   .video-wrapper {
     max-width: 350px;
@@ -226,7 +260,7 @@
       font-weight: 500;
       margin: 0;
     }
-    a{
+    button{
       margin-bottom: 2rem;
     }
   }

@@ -39,16 +39,43 @@
   }
   .background {
     position: relative;
-    height: 250px;
-    width: 444px;
+    height: 275px;
+    width: 500px;   
+    right: 10%;
     background-size: cover;
     background-position: center center;
+  }
+  .video-copy {
+    position: relative;
+    left: 10%;
   }
   .play-button {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+  }
+  &.float-right {
+    .background {
+      left: initial;
+      right: 20%;
+    }
+    .video-copy {
+      left: initial;
+      right: 10%;
+    }
+  }
+  @media screen and (max-width: 39.9375em) {
+    .background, .video-copy {
+      left: initial;
+      right: initial;
+    }
+    &.float-right {
+      .background, .video-copy {
+        left: initial;
+        right: initial;
+      }
+    }
   }
 }
 
@@ -252,7 +279,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 400px;
+    min-height: 550px;
     position: relative;
     margin-bottom: 1rem;
   }
@@ -267,7 +294,8 @@
     position: absolute;
     bottom: 0;
     text-align: center;
-    width: 100%;
+    width: 50%;
+    left: 25%;
     h2{
       color: #00A8E1; 
       font-family: $museo; 

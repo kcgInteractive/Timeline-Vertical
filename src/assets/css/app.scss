@@ -30,12 +30,13 @@ h2 {
 	color: $gray;
 	font-weight: 300;
 	line-height: 1.35;
+	margin-top: 0;
 }
 h3 {
 	font-family: $museo;
 	font-size: 1.5rem;
 	color: $gray;
-	font-weight: 500;
+	font-weight: 300;
 	line-height: 1.5;
 }
 .topBlock {
@@ -48,12 +49,22 @@ h3 {
 	.row div {
 		float: right;
 	}
+	.full-image {
+		background-position: right center;
+	}
 }
 .relative {
 	position: relative;
 }
 .uppercase {
 	text-transform: uppercase;
+}
+.weight-300 {
+	font-weight: 300;
+}
+.weight-500 {
+	font-weight: 500;
+	line-height: 2;
 }
 .blue {
 	color: $blue;
@@ -69,8 +80,40 @@ h3 {
 }
 .white {
 	color: #fff;
-	p,h2,h2,h3,h4{
+	p,h2,h3,h4{
 	    color: #fff; 
+	}
+}
+.date {
+	color: $blue; 
+	font-family: $museo; 
+	font-size: 18px;  
+	line-height: 18px;
+	margin: 0;
+}
+.h2-110 {
+	h2 {
+		width: 110%;
+	}
+}
+.h2-120 {
+	h2 {
+		width: 120%;
+	}
+}
+.h2-130 {
+	h2 {
+		width: 130%;
+	}
+}
+.h2-140 {
+	h2 {
+		width: 140%;
+	}
+}
+.h2-150 {
+	h2 {
+		width: 150%;
 	}
 }
 .h3-110 {

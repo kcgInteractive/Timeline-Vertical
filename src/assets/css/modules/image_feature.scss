@@ -1,9 +1,10 @@
 .Image_Feature_Full {
-	min-height: 600px;
+	//min-height: 600px;
 	.full-image {
 		background-size: cover;
-		background-position: center;
-		min-height: 600px;
+		background-position: left;
+		background-repeat: no-repeat;
+		//min-height: 600px;
 	}
 	.text-column {
 		margin: 3rem 1rem;

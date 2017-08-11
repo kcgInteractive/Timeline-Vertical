@@ -18,11 +18,22 @@
 	padding-bottom: 1rem;
 	border-bottom: 5px solid $blue;
 	margin-bottom: 2rem;
+	@include breakpoint(small) {
+		border:none;
+	}
 }
 .intro-image {
 	width: 120%;
 	transform: translateX(-10%);
+	@include breakpoint(small) {
+		width:100%;
+	}
 }
 .section-intro {
-	margin-top: 15rem;
+	margin-top: 15rem;				
+}
+.section-header {
+	@include breakpoint(small) {
+		border-bottom: 5px solid $blue;
+	}	
 }

@@ -14,3 +14,24 @@ $min : "min-width:";
 @function min($pxSize) {
 	@return #{$min} ($pxSize)+px; 
 }
+
+@mixin breakpoint($point) {
+	@if $point == desktop {
+		@media (min-width: 70em) { @content ; }
+	}
+	@else if $point == laptop {
+		@media (min-width: 64em) { @content ; }
+	}
+	@else if $point == medium-up {
+		@media only screen and (min-width: 40em) { @content ; }
+	}	
+	@else if $point == medium {
+		@media only screen and (min-width: 40em) and (max-width: 64em) { @content ; }
+	}
+	@else if $point == landscape {
+		@media only screen and (min-width: 40em) and (max-width: 64em) and (orientation: landscape) { @content ; }
+	}	
+	@else if $point == small {
+		@media only screen and (max-width: 40em) { @content ; }
+	}
+}

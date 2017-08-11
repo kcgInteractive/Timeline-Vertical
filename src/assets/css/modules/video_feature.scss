@@ -33,13 +33,54 @@
 }
 
 .Video_Feature_2 {
+  padding: 5rem 0;
   .video-wrapper {
     max-width: 350px;
+  }
+  .background {
+    position: relative;
+    height: 275px;
+    width: 500px;   
+    right: 10%;
+    background-size: cover;
+    background-position: center center;
+  }
+  .video-copy {
+    position: relative;
+    left: 10%;
+  }
+  .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  &.float-right {
+    .background {
+      left: initial;
+      right: 20%;
+    }
+    .video-copy {
+      left: initial;
+      right: 10%;
+    }
+  }
+  @media screen and (max-width: 39.9375em) {
+    .background, .video-copy {
+      left: initial;
+      right: initial;
+    }
+    &.float-right {
+      .background, .video-copy {
+        left: initial;
+        right: initial;
+      }
+    }
   }
 }
 
 .Video_Feature_3{
-  margin-top: 10rem;
+  padding: 10rem 0 5rem;
   .background {
     background-repeat:no-repeat;
     background-position:center;
@@ -47,6 +88,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 150px;
   }
   .video-thumb{  
     height: 150px;
@@ -66,7 +108,7 @@
       margin: 0;
     }
   }
-  .text-option{
+  .video-text{
     //display: none;
     max-width: 80%;
     margin: 0 auto;
@@ -152,7 +194,7 @@
       font-size: 18px;  
       line-height: 18px;
     }
-    h3{
+    h2{
       color: #444444; 
       font-family: $museo; 
       font-size: 28px;  
@@ -229,6 +271,7 @@
 }
 
 .Video_Feature_5{
+  margin: 5rem 0;
   .background {
     background-repeat:no-repeat;
     background-position:center;
@@ -236,7 +279,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 400px;
+    min-height: 550px;
     position: relative;
     margin-bottom: 1rem;
   }
@@ -251,8 +294,9 @@
     position: absolute;
     bottom: 0;
     text-align: center;
-    width: 100%;
-    h3{
+    width: 50%;
+    left: 25%;
+    h2{
       color: #00A8E1; 
       font-family: $museo; 
       font-size: 1.125rem;    

@@ -70,7 +70,6 @@ function appendVideo(button){
     var myVideoID = button.attr('data-video');
     var myVideoAspect = button.attr('data-aspect');
     var moduleID = currentVideo.closest('.module').attr('id');
-    console.log(currentVideo);
 
     $('.video').html('');
     $('.video').append('<div id="video-' + moduleID + '"></div>');
@@ -82,7 +81,7 @@ function appendVideo(button){
       image: "http://video.kochcreativegroupdev.com/thumbs/" + myVideoID + ".jpg",
       aspectratio:myVideoAspect,
       width:'100%', 
-      autostart: false,
+      autostart: true,
       controls: true,
       // events: {
       //   onPlay: 
@@ -107,13 +106,15 @@ function appendVideo(button){
 // 	$.each(videos, appendVideo);
 // });
 $('.play-button').on('click', function() {
-	var button =$(this);
+	var button = $(this);
 	$('.video-wrapper').addClass('active');
 	appendVideo(button);
 });
 
 $('.video-wrapper .close-button').on('click', function() {
+	var moduleID = $('.jwplayer').attr('id');
 	$('.video-wrapper').removeClass('active');
+	jwplayer(moduleID).pause(true);
 });
 /*--------------------------------------------------------------
 Draggable
@@ -239,3 +240,19 @@ $('.draggableMap #map').on('click', function(){
 		containment : 'parent'
 	});
 });
+//GET HEIGHT AND WIDTH OF MAPMASK TO GIVE TO .MAP
+function mapMaskCSS(){
+
+	var mapMask = $('.mapMask img'),
+		height = mapMask.height(),
+		width = mapMask.width(),
+		map = $('.map'),
+		draggableMap = $('.draggableMap');
+
+		draggableMap.children('img').height();
+
+} 
+// if map exists run width and height function
+if($('.draggableMap').length) {
+	mapMaskCSS();
+}

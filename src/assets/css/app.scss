@@ -35,6 +35,12 @@ h3 {
 	font-weight: 300;
 	line-height: 1.5;
 }
+h4 {
+	font-family: $museo;
+	font-size: 1.125rem;
+	color: $koch-blue;	
+	line-height: 1.2;
+}
 .topBlock {
 	position: fixed;
 }
@@ -157,7 +163,15 @@ h3 {
 			background-color: transparent;	
 			color: #fff;
 		}
+		&.float-right {
+			.text-column {
+				padding-right: 0;
+				margin-right: 0;
+				margin-left: 3rem;
+			}
+		}
 	}
+
 }
 
 .play-button {

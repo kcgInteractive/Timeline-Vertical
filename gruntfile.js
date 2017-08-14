@@ -66,6 +66,12 @@ module.exports = function(grunt) {
         src: '**/*.html',           // copy all files and subfolders
         dest: 'dist/transformations/',    // destination folder
         expand: true           // required when using cwd 
+      },
+      js: {
+        cwd: 'src/assets/js/vendor/',  // set working folder / root to copy
+        src: '**/*.js',           // copy all files and subfolders
+        dest: 'dist/assets/js/vendor/',    // destination folder
+        expand: true           // required when using cwd 
       }
     },
 
@@ -80,7 +86,7 @@ module.exports = function(grunt) {
         tasks: ['bake']
       },
       copy: {
-        files: ['src/assets/img/**/*.jpg','src/assets/img/*.jpg','src/assets/img/*.svg', 'src/*.html', 'src/transformations/*.html'],
+        files: ['src/assets/img/**/*.jpg','src/assets/img/*.jpg','src/assets/img/*.svg', 'src/*.html', 'src/transformations/*.html', 'src/assets/js/vendor/*.js'],
         tasks: ['copy']
       },
       uglify: {

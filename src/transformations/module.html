@@ -70,7 +70,7 @@
 	{% if(Module_Type == "Video_Feature_2") { %}
 	<div class="row">
 		<div class="small-12 medium-6 large-3 columns video-copy">
-			<p>{%Module_Year%}</p>
+			<p class="date">{%Module_Year%}</p>
 			<h2>{%Module_Title%}</h2>
 			<p>{%Module_Copy%}</p>
 		</div>
@@ -203,7 +203,7 @@
 			<div class="relative">
 				{^SubLevelPlaceHolder^}
 				<div class="module-text">
-					<p>{%Module_Year%}</p>
+					<p class="date white">{%Module_Year%}</p>
 					<h2>{%Module_Title%}</h2>
 					<p>{%Module_Copy%}</p>
 				</div>
@@ -249,11 +249,6 @@
     </div>
   {% } #%}
 
-	{% if(Module_Type == "Custom") { %}
-	<p>Custom</p>
-	{^SubLevelPlaceHolder^}
-	{% } #%}
-
   {% if(Module_Type == "The_Homecoming_Custom") { %}
   <div class="row">
     <div class="columns end large-4 medium-6 small-10 large-offset-2 medium-offset-0 small-offset-1 text-column">
@@ -263,6 +258,11 @@
       {^SubLevelPlaceholder^}
     </div>
   </div>
+  {% } #%}
+  
+  {% if(Module_Type == "Custom") { %}
+  <p>Custom</p>
+  {^SubLevelPlaceHolder^}
   {% } #%}
 
 </section>

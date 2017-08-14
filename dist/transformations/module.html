@@ -237,6 +237,18 @@
 	{^SubLevelPlaceHolder^}
 	{% } #%}
 
+  {% if(Module_Type == "New_Endeavors_Custom") { %}
+    <div class="row" data-equalizer>
+      <div class="columns end large-3 medium-3 small-10 -large-offset-0 medium-offset-0 small-offset-1 vertical-center" data-equalizer-watch>
+        <div class="copy">
+          <h2>{%Module_Title%}</h2>
+          <p>{%Module_Copy%}</p>
+        </div>
+      </div>
+      {^SubLevelPlaceholder^}
+    </div>
+  {% } #%}
+
 	{% if(Module_Type == "Custom") { %}
 	<p>Custom</p>
 	{^SubLevelPlaceHolder^}

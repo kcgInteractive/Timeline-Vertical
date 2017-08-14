@@ -1,14 +1,14 @@
 {%if(Media_Type == "photo") { %}
 
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Feature_Right") { %}
-		<div class="small-12 medium-8 large-9 columns image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
+		<div class="small-12 medium-8 large-7 columns image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
 		{% if (!String.IsNullOrEmpty(Media_Description)) { %}
 			<p>{%Media_Description%}</p>
 		{% } %}
 	{% } %}
 
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Feature_Left") { %}
-		<div class="small-12 medium-8 large-9 columns image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
+		<div class="small-12 medium-8 large-7 columns image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
 		{% if (!String.IsNullOrEmpty(Media_Description)) { %}
 			<p>{%Media_Description%}</p>
 		{% } %}
@@ -139,6 +139,13 @@
 		
 
 	{% } %}
+
+	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "The_Homecoming_Custom") { %}
+	  <div class="background" style="background-image: url('http://video.kochcreativegroupdev.com/thumbs/{%Option_Link%}.jpg');">
+        <button type="button" class="play-button play-button-1" data-video="{%Option_Link%}" data-aspect="{%Media_Aspect%}"></button>
+      </div>
+      <p><em>{%Media_Description%}</em></p>
+    {% } %}
 	
 {% } #%}
 

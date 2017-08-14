@@ -240,3 +240,19 @@ $('.draggableMap #map').on('click', function(){
 		containment : 'parent'
 	});
 });
+//GET HEIGHT AND WIDTH OF MAPMASK TO GIVE TO .MAP
+function mapMaskCSS(){
+
+	var mapMask = $('.mapMask img'),
+		height = mapMask.height(),
+		width = mapMask.width(),
+		map = $('.map'),
+		draggableMap = $('.draggableMap');
+
+		draggableMap.children('img').height();
+
+} 
+// if map exists run width and height function
+if($('.draggableMap').length) {
+	mapMaskCSS();
+}

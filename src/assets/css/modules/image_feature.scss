@@ -7,8 +7,14 @@
 		//min-height: 600px;
 	}
 	.text-column {
+		position: relative;
 		margin: 3rem 1rem;
 		background-color: #fff;
 		padding: 2.5rem 2rem;
+	}
+	.rock-island {
+		position: absolute;
+		top: 40px;
+		right: -35px;
 	}
 }

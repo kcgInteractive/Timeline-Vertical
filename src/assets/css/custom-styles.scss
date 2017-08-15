@@ -5,6 +5,19 @@
 		background-position: center center;
 	}
 }
+//The Thesis 
+
+#TheThesis {
+	[id="4"] {
+		position: relative;
+		bottom: 110px;
+		margin-bottom: -156px;
+		z-index: -1;
+		.full-image {
+			background-position: right;
+		}
+	}
+}
 #CharlesdeGanahl {
 	.video-bg {
 		background-image: url('/Timeline/media/kochTimeline/CharlesDeGanahl/Acme.jpg');

@@ -1,3 +1,5 @@
+
+//New Endeavors
 .three-image{
   padding: 2rem 0;
   position: relative;
@@ -28,5 +30,55 @@
 	  padding-bottom: 1.5rem;	
 	  text-align: center;
 	}
+  }
+}
+
+//The Homecoming
+.background-w-video{
+  padding: 2rem 0;
+  background-image: url("/Timeline/media/kochTimeline/TheHomecoming/Image_Feature_2.jpg");
+  background-repeat:no-repeat;
+  background-position:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .row{
+    padding: 7rem 0;
+  }
+  .background {
+    height: 130px;
+    width: 90%;
+    max-width: 250px;
+    margin-bottom: 2rem;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    .play-button{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  p{
+    color: #FFF;	
+    // font-family: $sans;	
+    // font-size: 16px;	
+    font-weight: 600;	
+    // line-height: 35px;
+    width: 80%;
+  }
+  h2{
+    color: #FFF;	
+    font-weight: 500;
+    //font-family: $museo;
+    //font-size: 2.75rem;
+  }
+  .video-column {
+  	p {
+  		font-size: 1rem;
+  	}
   }
 }

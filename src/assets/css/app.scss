@@ -1,6 +1,10 @@
 @import 'variables_and_mixins.scss';
 
-
+// *, *:before, *:after {
+// 	-moz-box-shadow: 0 0 5px rgba(255,157,24,.5);
+// 	-webkit-box-shadow: 0 0 5px rgba(255,157,24,.5);
+// 	box-shadow: 0 0 5px rgba(255,157,24,.5);
+// } 
 * , body {
 	box-sizing: border-box;
 }

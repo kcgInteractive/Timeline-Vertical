@@ -90,5 +90,37 @@
 	}
 }
 
+#TheHomecoming {
+	.dear-boys {
+		.text-column {
+			margin: 9rem 0 9rem 3rem;
+		}
+	}
+}
+#CharlesKoch {
+	.Custom_Image_Feature {
+		background-image: url("/Timeline/media/kochTimeline/CharlesKoch/Charles-DavidRanch1952.jpg");
+		clear: none;
+		// position: relative;
+  //   	top: -230px;
+  //   	z-index: -1;
+	}
+	.Section_Description {
+		margin-bottom: -30rem;
+		position: relative;
+		z-index: 1;
+	}
+	.thermometer {
+		margin: 4rem 0 2rem;
+		h3 {
+			font-size: 1.75rem;
+		}
+	}
+}
 
+#DavidKoch {
+	.Custom_Image_Feature {
+		background-image: url("http://blog.hdwallsource.com/wp-content/uploads/2016/01/fog-wallpaper-36612-37447-hd-wallpapers.jpg");
+	}
+}
 

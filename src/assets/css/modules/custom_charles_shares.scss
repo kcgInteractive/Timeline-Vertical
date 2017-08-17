@@ -1,0 +1,81 @@
+.Custom_Charles_Shares{
+  padding: 2rem 0;
+  img{
+    margin: 0 auto;
+    display: block;
+  }
+  img:nth-child(3) {
+    position: relative;
+    left: -13%;
+    margin-top: -200px;
+  }
+  p{
+    color: #444444; 
+    font-family: $sans; 
+    font-size: 14px;  
+    line-height: 27px;
+  }
+  .date{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    padding-left: 1rem;
+    p:nth-child(1) {
+      font-family: $museo;  
+      font-size: 28px;  
+      line-height: 38px;
+    }
+  }
+  .video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+    padding-right: 1rem;
+    p{
+      padding: 0.3rem 0.5rem;
+    }
+    p:nth-child(2) {
+      color: #00A8E1; 
+      font-family: $museo;  
+      font-size: 16px;  
+      font-style: italic; 
+      line-height: 25px;
+    }
+    button{
+      position: relative;
+      left: -85px;
+      bottom: -65px;
+    }
+  }
+  @media screen and (max-width: 63.9375em) {
+    .date, .video{
+      position: initial;
+      top: initial;
+      bottom: initial;
+      left: initial;
+      right: initial;
+      width: initial;
+      padding: 0;
+    }
+    img:nth-child(3) {
+      display:none;
+    }
+  }
+  @media screen and (max-width: 39.9375em) {
+    button{
+      display: block;
+      width: 56px;
+      left: initial!important;
+      bottom: initial!important;
+    }
+  }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .date, .video{
+      width:300px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

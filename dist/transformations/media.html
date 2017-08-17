@@ -96,6 +96,10 @@
       </div>
 	{% } %}
 
+	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Custom_Charles_Shares") { %}
+		<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%} Image">
+	{% } %}
+
 {% } #%}
 
 {%if(Media_Type == "graphic") { %}
@@ -139,9 +143,7 @@
 				<h2>{%Documents[NodeAliasPath].Parent.GetValue("Module_Title")%}</h2>
 				<p>{%Documents[NodeAliasPath].Parent.GetValue("Module_Copy")%}</p>
 			</div>
-		</div>
-		
-
+		</div>	
 	{% } %}
 
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "The_Homecoming_Custom") { %}
@@ -150,6 +152,16 @@
       </div>
       <p><em>{%Media_Description%}</em></p>
     {% } %}
+
+    {% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Custom_Charles_Shares") { %}
+		<div class="columns end large-3 medium-12 small-10 large-offset-0 medium-offset-0 small-offset-1">
+        <div class="video">
+          <button type="button" class="play-button play-button-1" data-video="{%Option_Link%}" data-aspect="{%Media_Aspect%}"></button>
+          <p>{%Media_Title%}</p>
+          <p>{%Media_Description%}</p>
+        </div>
+      </div>
+	{% } %}
 	
 {% } #%}
 

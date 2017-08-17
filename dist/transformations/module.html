@@ -281,6 +281,20 @@
     </div>
   </div>
   {% } #%}
+
+  {% if(Module_Type == "Custom_Charles_Shares") { %}
+  	<div class="row">
+    <div class="relative">
+      <div class="columns end large-3 medium-12 small-10 large-offset-0 medium-offset-0 small-offset-1">
+        <div class="date">
+          <p>{%Module_Year%} {%Module_Title%}</p>
+          <p>{%Module_Copy%}</p>
+        </div>
+      </div>
+      {^SubLevelPlaceholder^}
+    </div>
+  </div>
+  {% } #%}
   
   {% if(Module_Type == "Custom") { %}
   <p>Custom</p>

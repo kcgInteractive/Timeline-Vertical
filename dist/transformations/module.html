@@ -150,6 +150,26 @@
 		{% } %}  --> 
 	</div>
 	{% } #%}
+	
+	{% if(Module_Type == "Custom_Image_Feature") { %}
+	<div class="row">
+		<div class="columns end large-6 medium-12 small-10 large-offset-0 medium-offset-0 small-offset-1">
+      <div class="three-image-quote">
+        <p>{%Module_Copy%}</p>
+      </div>
+      <div class="three-image-text">
+
+        <h3>{%Module_Title%}</h3>
+        <p>{%Module_Copy%}</p>
+      </div>
+    </div>
+    <div class="columns end large-6 medium-12 small-12 large-offset-0 medium-offset-0 small-offset-0">
+      <div class="image-container">
+        {^SubLevelPlaceHolder^}
+      </div>
+    </div>
+	</div>
+	{% } #%}
 
 	{% if(Module_Type == "Image_Feature_Full") { %}
 	{^SubLevelPlaceHolder^}

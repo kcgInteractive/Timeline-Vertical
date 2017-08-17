@@ -1,0 +1,95 @@
+.Custom_Image_Feature{
+  background-repeat:no-repeat;
+  background-position:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 10rem 0;
+  position: relative;
+  &:before {
+    content:'';
+    width:100%;
+    height:15%;    
+    position:absolute;
+    left:0;
+    top:0;
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgba(255, 255, 0, 0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(255, 255, 255), rgba(255, 255, 0, 0));/* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(255, 255, 255), rgba(255, 255, 0, 0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 0, 0)); /* Standard syntax */
+  }
+  .image-container{
+    min-height: 700px;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    img{
+      position: absolute;
+    }
+    img:nth-child(1) {
+      left: 0;
+      top: 0;
+    }
+    img:nth-child(2) {
+      left: 50%;
+      top: 50%;
+      transform: translate(0%, -50%);
+      z-index: 10;
+    }
+    img:nth-child(3) {
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .three-image-quote{
+    display: none;
+    p{
+      color: $dark-blue;	
+      font-family: $museo;	
+      font-size: 24px;	
+      line-height: 46px;
+    }
+  }
+  .three-image-text{
+    display:block;
+    max-width: 320px;
+    margin: 0 auto;
+    h3{
+      color: #444444;	
+      font-family: Museo;	
+      font-size: 28px;	
+      line-height: 31px;
+    }
+    p{
+      color: #444444;	
+      font-family: "Proxima Nova";	
+      font-size: 14px;	
+      line-height: 27px;
+    }
+  }
+  @media screen and (max-width: 39.9375em) {
+    img{
+      position: initial!important;
+      left: initial !important;
+      top: initial !important;
+      transform: initial !important;
+      margin: 1rem auto;
+      display: block;
+    }
+  }
+}
+.Custom_Image_Feature.quote{
+  .columns{
+    .three-image-quote{
+      display:block;
+    }
+    .three-image-text{
+      display:none;
+    }
+    float: none;
+    @media screen and (max-width: 39.9375em) {
+    }
+  }
+}

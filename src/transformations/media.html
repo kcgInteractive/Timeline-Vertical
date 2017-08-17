@@ -15,7 +15,7 @@
 	{% } %}
 
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Custom_Image_Feature") { %}
-		<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/>
+		<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}"/>
 	{% } %}
 
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Feature_Full") { %}
@@ -23,7 +23,7 @@
 	{% } %}
 
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Text_Module_White") { %}
-		<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/>
+		<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}"/>
 	{% } %}
 
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Showcase_1") { %}
@@ -61,7 +61,7 @@
 	
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Video_Feature_4") { %}
 		<div class="large-6 medium-6 small-12 large-offset-0 medium-offset-0 small-offset-0 columns end" data-equalizer-watch>
-			<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}">
+			<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}">
 		</div>
 	{% } #%}
 	
@@ -71,19 +71,19 @@
 	
 
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Section_Description") { %}
-		<div class="image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
+		<div class="image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}"/></div>
 	{% } %}
 	
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Quote_1") { %}
-		<div class="image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
+		<div class="image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}"/></div>
 	{% } %}
 
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Quote_2") { %}
-		<div class="image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
+		<div class="image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}"/></div>
 	{% } %}
 
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Quote_3") { %}
-		<div class="image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
+		<div class="image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}"/></div>
 	{% } %}
 
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "New_Endeavors_Custom") { %}
@@ -99,7 +99,7 @@
 {% } #%}
 
 {%if(Media_Type == "graphic") { %}
-	<div class="image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
+	<div class="image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}"/></div>
 {% } #%}
 
 {%if(Media_Type == "video") { %}

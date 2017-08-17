@@ -24,5 +24,71 @@
 		background-size: cover;
 		background-position: center bottom;
 		padding-bottom: 15rem;
+		padding-top: 0;
+	}
+	.bio-video {
+		margin-top: 0;
+		position: relative;
+		bottom: 200px;
+		margin-bottom: -200px;
+		p {
+			width: 80%;
+			margin: 1rem auto;
+		}
 	}
 }
+#ABusinessisBorn {
+	[id="166"] {
+		.full-image {
+			min-height: 500px;
+		}
+	}
+	
+}
+#DeadBroke {
+	[id="38"] {
+		.text-column {
+			margin-top: 0;
+		}
+	}
+	.few-and-far {
+		min-height: 900px;
+		.full-image {
+			min-height: 900px;
+		}
+	}
+	.globe-oil {
+		min-height: 900px;
+		position: relative;
+		bottom: 235px;
+		margin-bottom: -235px;
+		.full-image {
+			min-height: 900px;
+			background-position: right;
+		}
+		.text-column {
+			margin-top: 300px;
+		}
+	}
+}
+#NewEndeavors {
+	.ranching {
+		.full-image {
+			min-height: 720px;
+			background-size: contain;
+		}
+		.text-column {
+			margin-top: 6rem;
+		}
+	}
+	.engineering {
+		margin-top: 3rem;
+		.full-image {
+			background-size: contain;
+			min-height: 630px;
+		}
+	}
+}
+
+
+

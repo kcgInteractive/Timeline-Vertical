@@ -11,6 +11,14 @@ body {
 article {
 	padding-bottom: 65px;
 }
+section {
+	clear: both;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 p {
 	font-family: $sans;
 	font-size: 0.825rem;

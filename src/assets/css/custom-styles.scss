@@ -97,7 +97,25 @@
 		}
 	}
 }
+#AggressiveExploration {
+	.retail-gas {
+		.text-column {
+			margin: 8rem 1rem;
+			margin-right: 0;
+		}
+	}
+}
 #CharlesKoch {
+	.Image_Feature_Full{
+		.full-image{
+			.columns{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 700px;
+			}
+		}
+	}
 	.Custom_Image_Feature {
 		background-image: url("/Timeline/media/kochTimeline/CharlesKoch/Charles-DavidRanch1952.jpg");
 		clear: none;
@@ -116,6 +134,7 @@
 			font-size: 1.75rem;
 		}
 	}
+
 }
 
 #DavidKoch {

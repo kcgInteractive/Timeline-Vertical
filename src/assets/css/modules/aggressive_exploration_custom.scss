@@ -1,0 +1,32 @@
+.Aggressive_Exploration_Custom {
+	.module-text {
+		width: 50%;
+		margin: 12rem auto;
+		p, h2, h3 {
+			color: #fff;
+		}
+		.module-copy {
+			max-width: 260px;
+		}
+	}
+	.business-video {
+		margin-top: 12rem;
+		h2 {
+			margin-top: 2rem;
+		}
+		.background {
+			position: relative;
+			min-height: 195px;
+			width: 130%;
+			right: 15%;
+			background-size: cover;
+			background-position: center center;
+		}
+		.play-button {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}

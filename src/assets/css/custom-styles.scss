@@ -99,10 +99,19 @@
 }
 #AggressiveExploration {
 	.retail-gas {
+		margin-bottom: -250px;
 		.text-column {
 			margin: 8rem 1rem;
 			margin-right: 0;
 		}
+	}
+	.pipeline {
+		margin-bottom: -200px;
+	}
+	.global-image {
+		background-image: url("/Timeline/media/kochTimeline/AggressiveExploration/Text_Module_White.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 }
 #CharlesKoch {
@@ -116,7 +125,7 @@
 			}
 		}
 	}
-	.Custom_Image_Feature {
+	.Multi_Image_Feature {
 		background-image: url("/Timeline/media/kochTimeline/CharlesKoch/Charles-DavidRanch1952.jpg");
 		clear: none;
 		// position: relative;
@@ -138,7 +147,7 @@
 }
 
 #DavidKoch {
-	.Custom_Image_Feature {
+	.Multi_Image_Feature {
 		background-image: url("http://blog.hdwallsource.com/wp-content/uploads/2016/01/fog-wallpaper-36612-37447-hd-wallpapers.jpg");
 	}
 }

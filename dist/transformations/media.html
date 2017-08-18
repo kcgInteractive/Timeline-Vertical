@@ -21,7 +21,7 @@
 		{% } %}
 	{% } %}
 
-	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Custom_Image_Feature") { %}
+	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Multi_Image_Feature") { %}
 		<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}"/>
 	{% } %}
 
@@ -169,6 +169,14 @@
         </div>
       </div>
 	{% } %}
+
+ 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Aggressive_Exploration_Custom") { %}
+ 		<div class="background" style="background-image: url('http://video.kochcreativegroupdev.com/thumbs/{%Option_Link%}.jpg')">
+			<button type="button" class="play-button play-button-1" data-video="{%Option_Link%}" data-aspect="{%Media_Aspect%}"></button>	
+		</div>
+      	<h2>{%Media_Title%}</h2>
+      	<p>{%Media_Description%}</p>
+    {% } #%}
 	
 {% } #%}
 

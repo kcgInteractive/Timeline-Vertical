@@ -107,6 +107,23 @@
 		<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%} Image">
 	{% } %}
 
+	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Custom_John_Wayne") { %}
+		<div class="columns end large-10 medium-10 small-12 large-offset-1 medium-offset-1 small-offset-0">
+      		<div class="row collapse flip">
+       		 	<div class="large-6 medium-6 small-12 large-offset-0 medium-offset-3 small-offset-0 columns end">
+          			<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}">
+        		</div>
+        		<div class="large-6 medium-6 small-10 large-offset-0 medium-offset-3 small-offset-1 columns end">
+          			<div class="copy">
+            			<p class="date">{%Documents[NodeAliasPath].Parent.GetValue("Module_Year")%}</p>
+            			<h2>{%Media_Title%}</h2>
+            			<p>{%Media_Description%}</p>
+          			</div>
+        		</div>
+      		</div>
+    	</div>
+	{% } %}
+
 {% } #%}
 
 {%if(Media_Type == "graphic") { %}

@@ -1,5 +1,13 @@
 $(document).foundation();
 
+//Menu Navigation
+$('.button-wrapper').on('click', function() {
+  $('.main-menu').addClass('active');
+});
+$('.close-wrapper').on('click', function() {
+  $('.main-menu').removeClass('active');
+});
+
 //Image Showcase
 
 // updated to get list items from transformaiton

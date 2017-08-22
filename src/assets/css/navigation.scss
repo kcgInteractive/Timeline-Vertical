@@ -1,0 +1,103 @@
+.main-menu {
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1000000;
+	background-color: #fff;
+	&.active {
+		display: block;
+		z-index: 1000000;
+	}
+	h2 {
+		text-align: center;
+		font-size: 2.25rem;
+		margin: 0;
+		margin-top: 3rem;
+	}
+	p.menu-subtitle {
+		text-align: center;
+		font-size: 1.125rem;
+		font-family: $sans;
+		font-weight: 300;
+		margin-bottom: 3rem;
+	}
+	ul {
+		margin: 0;
+		margin-top: 1rem;
+		padding: 0;
+		list-style: none;
+		li {
+			display: block;
+			font-size: 0.875rem;
+			padding: 1rem 0;
+			font-family: Museo;
+			font-weight: 400;
+		}
+		span {
+			color: $blue;
+			margin-right: 1rem;
+		}
+		a {
+			color: $gray;
+			text-decoration: none;
+		}
+	}
+	h3 {
+		font-size: 1.125rem;
+		margin: 0;
+		text-transform: uppercase;
+		font-family: Museo;
+		font-weight: 600;
+	}
+	p {
+		font-size: 0.75rem;
+		font-family: Museo;
+		margin: 0;
+		line-height: 1;
+	}
+	.chapter-number {
+		margin: 0;
+		margin-bottom: 0.75rem;
+		font-weight: 600;
+	}
+	.chapter-head {
+		padding: 4rem 0 3rem;
+		background-image: url('http://placehold.it/200x175');
+		background-position: center;
+		background-size: cover;
+	}
+	.close-wrapper {
+		display: block;
+		clear: both;
+		width: 60px;
+		height: 60px;
+		margin: 3rem auto;
+		text-align: center;
+		padding: 0.4rem 0.75rem;
+		background-color: #002E5C;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+	.menu-close {
+		text-align: center;
+		font-size: 1.75rem;
+		color: #fff;
+		outline: 0;
+		cursor: pointer;
+		span {
+			display: block;
+			text-transform: uppercase;
+			font-size: 0.6rem;
+			font-weight: 600;
+			letter-spacing: 1px;
+			padding-top: 0.25rem;
+			cursor: pointer;
+
+		}
+	}
+}

@@ -201,6 +201,20 @@
       	<h2>{%Media_Title%}</h2>
       	<p>{%Media_Description%}</p>
     {% } #%}
+
+    {% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Video_Feature_Two_Vid") { %}
+ 		<div class="large-5 medium-6 small-12 large-offset-0 medium-offset-0 small-offset-0 columns end">
+          	<div class="video-thumb">
+            	<div class="background" style="background-image: url(http://video.kochcreativegroupdev.com/thumbs/{%Option_Link%}.jpg');">
+              		<button type="button" class="play-button play-button-1" data-video="{%Option_Link%}" data-aspect="{%Media_Aspect%}"></button> 	
+              	</div>
+          	</div>
+          	<div class="text">
+            	<h2>{%Media_Title%}</h2>
+            	<p>{%Media_Description%}</p>
+          	</div>
+        </div>
+    {% } #%}
 	
 {% } #%}
 

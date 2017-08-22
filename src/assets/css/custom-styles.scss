@@ -8,17 +8,30 @@
 //The Thesis 
 
 #TheThesis {
-	[id="4"] {
+	[id="4"].Image_Feature_Full {
 		position: relative;
 		bottom: 110px;
-		margin-bottom: -156px;
+		margin-bottom: -195px;
 		z-index: -1;
 		.full-image {
 			background-position: right;
 		}
+		.text-column {
+			margin: 6rem 1rem;
+		}
+	}
+	[id="268"] {
+		.text-wrapper {
+			margin-top: 11rem;
+		}
 	}
 }
 #CharlesdeGanahl {
+	.telegram {
+		img {
+			width: 85%;
+		}
+	}
 	.video-bg {
 		background-image: url('/Timeline/media/kochTimeline/CharlesDeGanahl/Acme.jpg');
 		background-size: cover;
@@ -72,6 +85,11 @@
 	}
 }
 #NewEndeavors {
+	.float-right.wood-river {
+		.text-column {
+			margin-right: 0;
+		}
+	}
 	.ranching {
 		.full-image {
 			min-height: 720px;
@@ -86,6 +104,11 @@
 		.full-image {
 			background-size: contain;
 			min-height: 630px;
+		}
+	}
+	.pine-bend {
+		.text-column {
+			margin-bottom: 7rem;
 		}
 	}
 }

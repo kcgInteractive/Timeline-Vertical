@@ -12,14 +12,35 @@
 		background-color: #fff;
 		padding: 2.5rem 2rem;
 	}
+	&.float-right.text-noBG {
+		.text-column {
+			padding: 2.5rem 0;
+			margin-left: 0;
+			margin-right: 5.75rem;
+		}
+	}
+	&.text-noBG {
+		.text-column {
+			padding: 2.5rem 0;
+			margin-left: 5.75rem; 
+		}
+	}	
 	.rock-island {
 		position: absolute;
 		top: 40px;
 		right: -35px;
 	}
 }
-.Image_Feature_Left, .Image_Feature_9 {
+.Image_Feature_Left,  .Image_Feature_9{
 	.text-wrapper {
 		margin: 5rem 0;
+		margin-left: 8.33333%;
+		float: left;
+	}
+}
+.Image_Feature_8 {
+	.text-wrapper {
+		margin: 5rem 0;
+		float: left;
 	}
 }

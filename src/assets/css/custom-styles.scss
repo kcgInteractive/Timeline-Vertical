@@ -8,17 +8,32 @@
 //The Thesis 
 
 #TheThesis {
-	[id="4"] {
+	[id="4"].Image_Feature_Full {
 		position: relative;
 		bottom: 110px;
-		margin-bottom: -156px;
+		margin-bottom: -195px;
 		z-index: -1;
 		.full-image {
 			background-position: right;
 		}
+		.text-column {
+			margin: 6rem 1rem;
+		}
+	}
+	[id="268"] {
+		.text-wrapper {
+			margin-top: 11rem;
+			margin-left: 8.33333%;
+			float: left;
+		}
 	}
 }
 #CharlesdeGanahl {
+	.telegram {
+		img {
+			width: 85%;
+		}
+	}
 	.video-bg {
 		background-image: url('/Timeline/media/kochTimeline/CharlesDeGanahl/Acme.jpg');
 		background-size: cover;

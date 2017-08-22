@@ -334,6 +334,16 @@
     </div>
   </div>
   {% } #%}
+
+  {% if(Module_Type == "Custom_John_Wayne") { %}
+  <div class="row">
+    {^SubLevelPlaceholder^}
+    <div class="large-12 medium-12 small-12 large-offset-0 medium-offset-3 small-offset-0 columns end center-text">
+      {%Module_Copy%}
+    </div>
+    
+  </div>
+  {% } #%}
   
   {% if(Module_Type == "Custom") { %}
   <p>Custom</p>

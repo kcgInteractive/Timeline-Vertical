@@ -1,0 +1,114 @@
+
+.Sterling-John-Wayne{
+  position: relative;
+  padding-bottom: 30rem;
+  &:before {
+    content:'';
+    width:100%;
+    height:15%;    
+    position:absolute;
+    left:0;
+    top:0;
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgba(255, 255, 0, 0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(255, 255, 255), rgba(255, 255, 0, 0));/* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(255, 255, 255), rgba(255, 255, 0, 0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 0, 0)); /* Standard syntax */
+  }
+  &:after{
+    content:'';
+    width:100%;
+    height: 74.7rem;
+    opacity: 0.8;
+    z-index: -1;   
+    position:absolute;
+    left:0;
+    bottom:0;
+    background-image: url("http://blog.hdwallsource.com/wp-content/uploads/2016/01/fog-wallpaper-36612-37447-hd-wallpapers.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .columns{
+    .flip{
+      img{
+        width: 100%;
+      }
+      .copy{
+        width: 70%;
+        padding-left: 4rem;
+        margin-top: 9rem;
+        p{color: #444444;	
+          font-family: "Proxima Nova";	
+          font-size: 14px;	
+          line-height: 27px;}
+      }
+    } 
+  }
+  .columns ~ .columns{
+    margin-bottom: -7rem;
+    .flip{
+      .columns:nth-child(1) {
+        float: right;
+        img{
+          position: relative;
+          top: -175px;
+          right: 20%;
+        }
+      }
+      .columns:nth-child(2) {
+        float: left;
+        .copy{
+          padding-left: 0;
+          margin-top: 5rem;
+        }
+        .date{display:none}
+        h2{display:none;}
+      }
+    } 
+  }
+  .center-text{
+    text-align: center;
+    h2{
+      color: #09030C;	
+      font-family: Museo;	
+      font-size: 28px;	
+      line-height: 49px;
+    }
+    p{
+      color: #09030C;	
+      font-family: "Proxima Nova";	
+      font-size: 14px;	
+      line-height: 17px;
+    }
+  }
+  @media screen and (max-width: 63.9375em) {
+    .row{
+      margin: 0;
+      padding: 0;
+    }
+    .columns{
+      float: initial;
+      padding: 0;
+    }
+    .flip .columns:nth-child(1) img{
+      right: initial!important;
+      top: initial!important;
+    }
+    .columns ~ .columns .flip .columns:nth-child(1){
+      float: initial;
+    }
+    .columns ~ .columns .flip .columns:nth-child(2) .copy{
+      padding: 0;
+      margin: 1rem auto;
+    }
+    .copy{
+      padding: 0!important;
+      margin: 1rem auto!important;
+      width: 100%!important;
+    }
+  }
+}

@@ -23,8 +23,6 @@
 	[id="268"] {
 		.text-wrapper {
 			margin-top: 11rem;
-			margin-left: 8.33333%;
-			float: left;
 		}
 	}
 }
@@ -87,6 +85,11 @@
 	}
 }
 #NewEndeavors {
+	.float-right.wood-river {
+		.text-column {
+			margin-right: 0;
+		}
+	}
 	.ranching {
 		.full-image {
 			min-height: 720px;
@@ -101,6 +104,11 @@
 		.full-image {
 			background-size: contain;
 			min-height: 630px;
+		}
+	}
+	.pine-bend {
+		.text-column {
+			margin-bottom: 7rem;
 		}
 	}
 }

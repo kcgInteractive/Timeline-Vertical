@@ -37,7 +37,7 @@ footer {
 			}
 			.dates {
 				font-size: 0.8rem;
-				color: #00A8E1;
+				color: $koch-blue;
 				font-weight: 700;
 				letter-spacing: 1px;
 				font-family: $museo;
@@ -45,7 +45,7 @@ footer {
 			}
 			.title {
 				font-size: 0.875rem;
-				color: #444;
+				color: $gray;
 				font-weight: 700;
 				letter-spacing: 1px;
 				text-transform: uppercase;
@@ -99,6 +99,50 @@ footer {
 				top: 5px;
 			}
 			
+		}
+	}
+	@media screen and (max-width: 39.9375em) {
+		position: absolute;
+		top: 0;
+		bottom: initial;
+		background-color: transparent;
+		display: flex;
+		justify-content: flex-end;
+		.logo {
+			display: none;
+		}
+		.navigation {
+			// float: right;
+			background-color: white;
+			width: auto;
+			margin-right: 1rem;
+			display: flex;
+			align-items: center;
+		}
+		.chapter-mobile {
+			color: #002E5C;
+			font-size: 0.75rem;
+			text-transform: uppercase;
+			text-align: right;
+			font-family: $museo;
+			font-weight: bold;
+			line-height: 1.25;
+		}
+		.section-mobile {
+			line-height: 1.25;
+			text-transform: uppercase;
+			text-align: right;
+			font-family: $museo;
+			font-weight: bold;
+			color: $blue;
+		}
+		.chapter-title-mobile {
+			
+		}
+		.menu-toggle {
+			// float: right;
+			width: 65px;
+			background-color: #002E5C;
 		}
 	}
 }

@@ -4,6 +4,9 @@
 	font-family: $museo;
 	font-size: 1.1rem;
 	font-weight: 300;
+	@media screen and (max-width: 39.9375em) {
+		padding: 0 2rem;
+	}
 }
 .chapter-title {
 	color: $blue;
@@ -21,11 +24,25 @@
 	padding-bottom: 1rem;
 	border-bottom: 5px solid $blue;
 	margin-bottom: 2rem;
+	@media screen and (max-width: 39.9375em) {
+		margin-bottom: 1rem;
+		border-bottom: 0;
+		padding: 0 2rem;
+	}
 }
 .intro-image {
 	width: 120%;
 	transform: translateX(-10%);
+	@media screen and (max-width: 39.9375em) {
+		width: 100%;
+		transform: none;
+		padding: 0 1rem;
+	}
 }
 .section-intro {
 	margin-top: 15rem;
+	@media screen and (max-width: 39.9375em) {
+		margin-top: 4rem;
+		border-bottom: 5px solid #96C7D4;
+	}
 }

@@ -104,18 +104,20 @@
 .back-next {
 	width: 100%;
 	position: fixed;
-	padding: 1rem 15%; 
+	bottom: 8%;
+	padding: 1rem 8%; 
 	.back, .next {
 		display: inline-block;
 	}
 	a {
-		color: #002E5C;
+		color: $koch-blue;
+		text-decoration: none;
 	}
 	i {
 		width: 28px;
 		height: 28px;
 		border-radius: 50%;
-		background-color: #002E5C;
+		background-color: $koch-blue;
 		color: white;
 		text-align: center;
 		vertical-align: middle;
@@ -123,7 +125,7 @@
 	span {
 		font-size: 0.75rem;
 		text-transform: uppercase;
-		font-family: Museo;
+		font-family: $museo;
 		font-weight: bold;
 		letter-spacing: 1px;
 	}

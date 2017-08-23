@@ -33,7 +33,15 @@
 	{% } %}
 
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Feature_Full") { %}
-		<div class="full-image" style="background-image: url('/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}');">
+		{% if(!CurrentDevice.IsMobile) { %}
+	      	<div class="full-image" style="background-image: url('/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}');">
+	     {% } #%}
+	     {% if(CurrentDevice.IsMobile AND String.IsNullOrEmpty(Mobile_Image)) { %}
+	      	<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}"/>
+	     {% } #%}
+	     {% if(CurrentDevice.IsMobile AND !String.IsNullOrEmpty(Mobile_Image)) { %}
+	      	<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Mobile_Image%}" alt="{%Media_Title%}"/>
+	     {% } #%}
 	{% } %}
 
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Text_Module_White") { %}
@@ -186,7 +194,7 @@
 
     {% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Custom_Charles_Shares") { %}
 		<div class="columns end large-3 medium-12 small-10 large-offset-0 medium-offset-0 small-offset-1">
-        <div class="video-button">
+        <div class="video">
           <button type="button" class="play-button play-button-1" data-video="{%Option_Link%}" data-aspect="{%Media_Aspect%}"></button>
           <p>{%Media_Title%}</p>
           <p>{%Media_Description%}</p>

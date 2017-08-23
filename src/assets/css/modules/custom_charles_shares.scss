@@ -27,7 +27,7 @@
     //   line-height: 38px;
     // }
   }
-  .video{
+  .ccsvideo{
     position: absolute;
     right: 0;
     bottom: 0;
@@ -50,7 +50,7 @@
     }
   }
   @media screen and (max-width: 63.9375em) {
-    .date, .video{
+    .date, .ccsvideo{
       position: initial;
       top: initial;
       bottom: initial;
@@ -72,7 +72,7 @@
     }
   }
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .date, .video{
+    .date, .ccsvideo{
       width:300px;
       display: block;
       margin: 0 auto;

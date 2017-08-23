@@ -18,6 +18,12 @@
 			margin-left: 0;
 			margin-right: 5.75rem;
 		}
+		@media screen and (max-width: 39.9375em) {
+			.text-column{
+				margin: 0;
+				padding: 0;
+			}
+		}
 	}
 	&.text-noBG {
 		.text-column {
@@ -29,6 +35,12 @@
 		position: absolute;
 		top: 40px;
 		right: -35px;
+	}
+	@media screen and (max-width: 39.9375em) {
+		.text-column{
+			margin: 0;
+			padding: 0;
+		}
 	}
 }
 .Image_Feature_Left,  .Image_Feature_9{
@@ -42,5 +54,12 @@
 	.text-wrapper {
 		margin: 5rem 0;
 		float: left;
+	}
+}
+@media screen and (max-width: 39.9375em) {
+	.Image_Feature_Full.white{
+		p{
+			color: #444;
+		}
 	}
 }

@@ -8,6 +8,22 @@ $('.close-wrapper').on('click', function() {
   $('.main-menu').removeClass('active');
 });
 
+function backNext() {
+  var items = $('.menu-item a');
+  var currentPage = window.location.href;
+  var itemIndex;
+
+  for(var i=0; i<items.length; i++) {
+    var item = items[i].href;
+    if(item === currentPage) {
+      itemIndex = i;
+    }
+  }
+  $('.back-next').append('<div class="back"><a href="' + items[itemIndex-1] + '"><i class="fa fa-angle-left" aria-hidden="true"></i><span>Back</span></a></div>');
+  $('.back-next').append('<div class="next"><a href="' + items[itemIndex+1] + '"><span>Next</span><i class="fa fa-angle-right" aria-hidden="true"></i></a></div>');
+
+}backNext(); 
+
 //Image Showcase
 
 // updated to get list items from transformaiton

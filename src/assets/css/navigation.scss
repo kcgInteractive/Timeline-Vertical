@@ -101,3 +101,49 @@
 		}
 	}
 }
+.back-next {
+	width: 100%;
+	position: fixed;
+	padding: 1rem 15%; 
+	.back, .next {
+		display: inline-block;
+	}
+	a {
+		color: #002E5C;
+	}
+	i {
+		width: 28px;
+		height: 28px;
+		border-radius: 50%;
+		background-color: #002E5C;
+		color: white;
+		text-align: center;
+		vertical-align: middle;
+	}
+	span {
+		font-size: 0.75rem;
+		text-transform: uppercase;
+		font-family: Museo;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+	.back {
+		i {
+			margin-right: 0.5rem;
+			padding-top: 0.1rem;
+			padding-right: 0.25rem;
+			font-size: 1.4rem;
+			font-weight: bold;
+		}
+	}
+	.next {
+		float: right;
+		i {
+			margin-left: 0.5rem;
+			padding-top: 0.1rem;
+			padding-left: 0.25rem;
+			font-size: 1.4rem;
+			font-weight: bold;
+		}
+	}
+}

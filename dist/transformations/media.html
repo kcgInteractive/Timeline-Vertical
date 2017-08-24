@@ -13,7 +13,14 @@
 			<p>{%Media_Description%}</p>
 		{% } %}
 	{% } %}
-
+	
+	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Feature_8") { %}
+		<div class="small-12 medium-8 large-8 columns image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
+		{% if (!String.IsNullOrEmpty(Media_Description)) { %}
+			<p>{%Media_Description%}</p>
+		{% } %}
+	{% } %}
+	
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Feature_9") { %}
 		<div class="small-12 medium-8 large-9 columns image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
 		{% if (!String.IsNullOrEmpty(Media_Description)) { %}
@@ -21,11 +28,8 @@
 		{% } %}
 	{% } %}
 
-	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Feature_8") { %}
-		<div class="small-12 medium-8 large-8 columns image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/></div>
-		{% if (!String.IsNullOrEmpty(Media_Description)) { %}
-			<p>{%Media_Description%}</p>
-		{% } %}
+	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Feature_12") { %}
+		<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}"/>
 	{% } %}
 
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Multi_Image_Feature") { %}

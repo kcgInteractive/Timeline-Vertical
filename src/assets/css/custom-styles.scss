@@ -63,7 +63,6 @@
 		div.columns {
 			margin-bottom: -5rem;
 		}
-		
 	}
 	[id="38"] {
 		.text-column {
@@ -118,13 +117,32 @@
 		}
 	}
 }
-
+#SterlingVarner {
+	.Section_Description {
+		div.columns {
+			margin-bottom: -28rem;
+		}
+	}
+	.life-of-varner {
+		div.columns {
+			margin-left: 25%;
+			margin-bottom: -10rem;
+		}
+		.background {
+			min-height: 275px;
+			width: 180%;
+			right: 40%;
+		}
+		h2 {
+			margin-top: 4rem;
+		}
+	}
+}
 #TheHomecoming {
 	.Section_Description {
 		div.columns {
 			margin-bottom: -5rem;
-		}
-		
+		}	
 	}
 	.phone-call {
 		.text-column {
@@ -138,6 +156,11 @@
 	}
 }
 #AggressiveExploration {
+	.Section_Description {
+		div.columns {
+			margin-bottom: -6rem;
+		}	
+	}
 	.arrival {
 		.image-wrapper, .text-wrapper {
 			margin-bottom: -8rem;
@@ -171,6 +194,13 @@
 	}
 }
 #CharlesKoch {
+	.Section_Description {
+		div.columns {
+			margin-bottom: -40rem;
+			position: relative;
+			z-index: 1;
+		}
+	}
 	.Image_Feature_Full{
 		.full-image{
 			.columns{
@@ -188,11 +218,6 @@
   //   	top: -230px;
   //   	z-index: -1;
 	}
-	.Section_Description {
-		margin-bottom: -30rem;
-		position: relative;
-		z-index: 1;
-	}
 	.thermometer {
 		.text-wrapper {
 			margin: 4rem 0 2rem;	
@@ -203,8 +228,70 @@
 	}
 
 }
-
+#ASolidGasLiquidsIdea {
+	.Section_Description {
+		div.columns {
+			margin-bottom: -6rem;
+		}
+	}
+	.varner-quote {
+		margin-bottom: -7rem;
+		.text-column {
+			margin-top: 6rem;
+			margin-bottom: 6rem;
+			margin-right: 5.75rem;
+			padding: 2rem 0;
+		}
+	}
+	.Video_Feature_2 {
+		.video-copy {
+			margin: 3rem 0;
+			padding-left: 2.5rem;
+		}
+	}
+	.bill-hanna {
+		.text-column {
+			margin: 11rem 0;
+			margin-left: 5.75rem;
+		}
+	}
+	.medford {
+		.text-column {
+			margin: 7rem 2.75rem;
+		}
+	}
+}
+#ANewFoundation {
+	.Section_Description {
+		div.columns {
+			margin-bottom: -5rem;
+		}
+	}
+	.Image_Feature_9 {
+		.text-wrapper {
+			margin-left: 0;
+		}
+	}
+}
 #DavidKoch {
+	.david-track {
+		div.columns {
+			margin-bottom: -5rem;
+		}
+	}
+	.david-bio {
+		.image-wrapper {
+			margin: 5rem 0;
+			padding-left: 16.667%;
+		}
+		.text-wrapper {
+			margin-top: 0;
+			margin-bottom: 0;
+			background-color: #fff;
+			padding: 2rem;
+			width: 27%;
+		}
+	}
 	.Multi_Image_Feature {
 		background-image: url("http://blog.hdwallsource.com/wp-content/uploads/2016/01/fog-wallpaper-36612-37447-hd-wallpapers.jpg");
 	}

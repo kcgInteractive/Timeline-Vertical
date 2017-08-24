@@ -83,6 +83,7 @@
 #SterlingVarner {
 	.section-hero {
 		background-image: url('/Timeline/media/kochTimeline/SterlingVarner/Hero.jpg');
+		background-position: top center;
 		@media (max(768)) {
 			background-image: url('/Timeline/media/kochTimeline/SterlingVarner/Mobile_Hero.jpg');
 		}
@@ -116,7 +117,7 @@
 #CharlesKoch {
 	.section-hero {
 		background-image: url('/Timeline/media/kochTimeline/CharlesKoch/Hero.jpg');
-		background-position: left bottom;
+		background-position: center bottom;
 		@media (max(768)) {
 			background-image: url('/Timeline/media/kochTimeline/CharlesKoch/Mobile_Hero.jpg');
 		}
@@ -186,7 +187,7 @@
 #DavidKoch {
 	.section-hero {
 		background-image: url('/Timeline/media/kochTimeline/DavidKoch/hero.jpg');
-		background-position: left bottom;
+		background-position: center bottom;
 		@media (max(768)) {
 			background-image: url('/Timeline/media/kochTimeline/DavidKoch/Mobile_Hero.jpg');
 		}

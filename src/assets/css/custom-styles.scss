@@ -52,13 +52,19 @@
 }
 #ABusinessisBorn {
 	[id="166"] {
-		.full-image {
-			min-height: 500px;
+		.text-column {
+			margin: 8rem 1rem 8rem 5.75rem;
 		}
 	}
 	
 }
-#DeadBroke {
+#FlatBroke {
+	.Section_Description {
+		div.columns {
+			margin-bottom: -5rem;
+		}
+		
+	}
 	[id="38"] {
 		.text-column {
 			margin-top: 0;
@@ -114,6 +120,17 @@
 }
 
 #TheHomecoming {
+	.Section_Description {
+		div.columns {
+			margin-bottom: -5rem;
+		}
+		
+	}
+	.phone-call {
+		.text-column {
+			margin: 7rem 1rem;
+		}
+	}
 	.dear-boys {
 		.text-column {
 			margin: 9rem 0 9rem 3rem;
@@ -121,6 +138,22 @@
 	}
 }
 #AggressiveExploration {
+	.arrival {
+		.image-wrapper, .text-wrapper {
+			margin-bottom: -8rem;
+		}
+		
+	}
+	.getting-crude {
+		.video-copy {
+			background-color: #fff;
+			padding: 2rem;
+			width: 27%;
+		}
+		.background {
+			margin: 5rem 0;
+		}
+	}
 	.retail-gas {
 		margin-bottom: -250px;
 		.text-column {

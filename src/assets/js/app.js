@@ -19,9 +19,14 @@ function backNext() {
       itemIndex = i;
     }
   }
-  $('.back-next').append('<div class="back"><a href="' + items[itemIndex-1] + '"><i class="fa fa-angle-left" aria-hidden="true"></i><span>Back</span></a></div>');
-  $('.back-next').append('<div class="next"><a href="' + items[itemIndex+1] + '"><span>Next</span><i class="fa fa-angle-right" aria-hidden="true"></i></a></div>');
-
+  if(items[itemIndex-1] !== undefined) {
+    $('.back-next').append('<div class="back"><a href="' + items[itemIndex-1] + '"><i class="fa fa-angle-left" aria-hidden="true"></i><span>Back</span></a></div>');
+  
+  }
+  if(items[itemIndex+1] !== undefined) {
+    $('.back-next').append('<div class="next"><a href="' + items[itemIndex+1] + '"><span>Next</span><i class="fa fa-angle-right" aria-hidden="true"></i></a></div>');
+  }
+  
 }backNext(); 
 
 //Image Showcase

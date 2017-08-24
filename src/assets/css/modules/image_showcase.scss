@@ -1,5 +1,7 @@
 .Image_Showcase_1{
-  background: #444;
+  background: url('/Timeline/media/kochTimeline/image_showcase_bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
   .text-option{
 	visibility: hidden;
 	display: none;
@@ -50,12 +52,13 @@
 	  top: 5%;
 	  width: 80%;
 	  right: 0;
+	  padding: 0 1rem;
 	  h2 {
 	  	color: #fff;
 	  	margin: 0.5rem 0;
 	  }
 	  p {
-	  	font-size: 0.825rem;
+	  	font-size: 0.8rem;
 	  	font-weight: 600;
 	  }
 	}

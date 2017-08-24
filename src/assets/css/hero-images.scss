@@ -3,7 +3,7 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 100vh;
+	height: 75vh;
 	position: absolute;
 	top: 0;
 	z-index: -1;
@@ -59,12 +59,12 @@
 	}
 }
 // STRUGGLE
-#DeadBroke {
+#FlatBroke {
 	.section-hero {
-		background-position: bottom left;
-		background-image: url('/Timeline/media/kochTimeline/DeadBroke/Hero.jpg');
+		background-position: top left;
+		background-image: url('/Timeline/media/kochTimeline/FlatBroke/Hero.jpg');
 		@media (max(768)) {
-			background-image: url('/Timeline/media/kochTimeline/DeadBroke/Mobile_Hero.jpg');
+			background-image: url('/Timeline/media/kochTimeline/FlatBroke/Mobile_Hero.jpg');
 		}
 		@media (max(600)) {
 		}

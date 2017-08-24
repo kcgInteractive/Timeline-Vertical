@@ -283,6 +283,7 @@
 		.image-wrapper {
 			margin: 5rem 0;
 			padding-left: 16.667%;
+			margin-bottom: -10rem;
 		}
 		.text-wrapper {
 			margin-top: 0;
@@ -290,10 +291,81 @@
 			background-color: #fff;
 			padding: 2rem;
 			width: 27%;
+			margin-bottom: -10rem;
+		}
+	}
+	.moeller-video {
+		padding: 0;
+		padding-bottom: 10rem;
+		.background {
+			right: 15%;
+			height: 125px;
+			width: 200px;
 		}
 	}
 	.Multi_Image_Feature {
-		background-image: url("http://blog.hdwallsource.com/wp-content/uploads/2016/01/fog-wallpaper-36612-37447-hd-wallpapers.jpg");
+		background-image: url("/Timeline/media/kochTimeline/DavidKoch/dinosaur.jpg");
+		padding-bottom: 40rem;
+		margin-bottom: 5rem;
+	}
+	.influential {
+		p {
+			font-size: 1rem;
+			
+		}
+		.text-column {
+			margin: 11rem 0;
+			width: 150%;
+		}
 	}
 }
-
+#CaringforOurCommunities {
+	.Section_Description {
+		div.columns {
+			margin-bottom: -2rem;
+		}
+	}
+	.corporate-commitment {
+		.text-wrapper {
+			width: 41.667%;
+			padding-left: 8.333%;
+			margin-top: 10rem;
+		}
+		.image-wrapper {
+			margin-bottom: -7rem;
+		}
+	}
+	.small-beginnings {
+		background: url('/Timeline/media/kochTimeline/CaringforOurCommunities/Bio_Image_bg.jpg') no-repeat;
+		background-size: cover;
+		background-position: right bottom;
+		div.columns {
+			margin-bottom: -12rem;
+		}
+	}
+	.lessons-learned {
+		background: url('/Timeline/media/kochTimeline/CaringforOurCommunities/kids.png') no-repeat;
+		background-size: cover;
+		background-position: right;
+		padding: 12rem 0 2rem;
+		.content {
+			width: 41.667%;
+		}
+	}
+	.donors {
+		padding: 5rem 0;
+		.background {
+			min-height: 145px;
+			width: 50%;
+			left: 25%;
+		}
+		h2 {
+			margin-top: 2rem;
+		}
+		div.columns {
+			width: 42.667%;
+			margin-left: 28%;	
+		}
+		
+	}
+}

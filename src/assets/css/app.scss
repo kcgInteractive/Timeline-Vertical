@@ -67,6 +67,12 @@ h4 {
 		background-position: right center;
 	}
 }
+.italic {
+	font-style: italic;
+	p, h2, h3 {
+		font-style: italic;
+	}
+}
 .relative {
 	position: relative;
 }

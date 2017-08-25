@@ -318,8 +318,18 @@
       font-weight: 500;
       margin: 0;
     }
+    p {
+      width: 80%;
+      margin: 1rem auto;
+
+    }
     button{
       margin-bottom: 2rem;
+    }
+  }
+  .text-column {
+    p {
+      text-align: left;
     }
   }
 }

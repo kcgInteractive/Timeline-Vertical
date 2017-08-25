@@ -51,6 +51,7 @@
 #ABusinessisBorn {
 	.section-hero {
 		background-image: url('/Timeline/media/kochTimeline/ABusinessIsBorn/Hero.jpg');
+		background-position: center;
 		@media (max(768)) {
 			background-image: url('/Timeline/media/kochTimeline/ABusinessIsBorn/Mobile_Hero.jpg');
 		}
@@ -59,12 +60,12 @@
 	}
 }
 // STRUGGLE
-#FlatBroke {
+#UphillBattle {
 	.section-hero {
 		background-position: top left;
-		background-image: url('/Timeline/media/kochTimeline/FlatBroke/Hero.jpg');
+		background-image: url('/Timeline/media/kochTimeline/UphillBattle/Hero.jpg');
 		@media (max(768)) {
-			background-image: url('/Timeline/media/kochTimeline/FlatBroke/Mobile_Hero.jpg');
+			background-image: url('/Timeline/media/kochTimeline/UphillBattle/Mobile_Hero.jpg');
 		}
 		@media (max(600)) {
 		}
@@ -125,12 +126,12 @@
 		}
 	}
 }
-#ASolidGasLiquidsIdea {
+#TimeofTransformation {
 	.section-hero {
-		background-image: url('/Timeline/media/kochTimeline/ASolidGasLiquidsIdea/Hero.jpg');
+		background-image: url('/Timeline/media/kochTimeline/TimeofTransformation/Hero.jpg');
 		background-position: left top;
 		@media (max(768)) {
-			background-image: url('/Timeline/media/kochTimeline/ASolidGasLiquidsIdea/Mobile_Hero.jpg');
+			background-image: url('/Timeline/media/kochTimeline/TimeofTransformation/Mobile_Hero.jpg');
 		}
 		@media (max(600)) {
 		}

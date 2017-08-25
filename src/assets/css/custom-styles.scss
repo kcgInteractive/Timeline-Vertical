@@ -51,12 +51,17 @@
 	}
 }
 #ABusinessisBorn {
-	[id="166"] {
+	[id="32"] {
 		.text-column {
 			margin: 8rem 1rem 8rem 5.75rem;
 		}
 	}
-	
+	.short-lived {
+		.text-column {
+			margin-top: 5rem;
+			margin-bottom: 5rem;
+		}
+	}
 }
 #FlatBroke {
 	.Section_Description {
@@ -228,7 +233,7 @@
 	}
 
 }
-#ASolidGasLiquidsIdea {
+#TimeofTransformation {
 	.Section_Description {
 		div.columns {
 			margin-bottom: -6rem;
@@ -366,6 +371,14 @@
 			width: 42.667%;
 			margin-left: 28%;	
 		}
-		
+	}
+	.end {
+		h2 {
+			line-height: 1.75;
+			width: 105%;
+		}
+		div.columns {
+			width: 41.667%;
+		}
 	}
 }

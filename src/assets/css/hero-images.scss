@@ -3,7 +3,7 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 100vh;
+	height: 75vh;
 	position: absolute;
 	top: 0;
 	z-index: -1;
@@ -59,12 +59,12 @@
 	}
 }
 // STRUGGLE
-#DeadBroke {
+#FlatBroke {
 	.section-hero {
-		background-position: bottom left;
-		background-image: url('/Timeline/media/kochTimeline/DeadBroke/Hero.jpg');
+		background-position: top left;
+		background-image: url('/Timeline/media/kochTimeline/FlatBroke/Hero.jpg');
 		@media (max(768)) {
-			background-image: url('/Timeline/media/kochTimeline/DeadBroke/Mobile_Hero.jpg');
+			background-image: url('/Timeline/media/kochTimeline/FlatBroke/Mobile_Hero.jpg');
 		}
 		@media (max(600)) {
 		}
@@ -83,6 +83,7 @@
 #SterlingVarner {
 	.section-hero {
 		background-image: url('/Timeline/media/kochTimeline/SterlingVarner/Hero.jpg');
+		background-position: top center;
 		@media (max(768)) {
 			background-image: url('/Timeline/media/kochTimeline/SterlingVarner/Mobile_Hero.jpg');
 		}
@@ -116,7 +117,7 @@
 #CharlesKoch {
 	.section-hero {
 		background-image: url('/Timeline/media/kochTimeline/CharlesKoch/Hero.jpg');
-		background-position: left bottom;
+		background-position: center bottom;
 		@media (max(768)) {
 			background-image: url('/Timeline/media/kochTimeline/CharlesKoch/Mobile_Hero.jpg');
 		}
@@ -174,7 +175,7 @@
 #CaringforOurCommunities {
 	.section-hero {
 		background-position: bottom left;
-		background-image: url('/Timeline/media/kochTimeline/CaringforOurCommunities/Hero_new.jpg');
+		background-image: url('/Timeline/media/kochTimeline/CaringforOurCommunities/hero.jpg');
 		background-position: left top;
 		@media (max(768)) {
 			background-image: url('/Timeline/media/kochTimeline/YouGetWhatYouGive/Mobile_Hero.jpg');
@@ -186,7 +187,7 @@
 #DavidKoch {
 	.section-hero {
 		background-image: url('/Timeline/media/kochTimeline/DavidKoch/hero.jpg');
-		background-position: left bottom;
+		background-position: center bottom;
 		@media (max(768)) {
 			background-image: url('/Timeline/media/kochTimeline/DavidKoch/Mobile_Hero.jpg');
 		}

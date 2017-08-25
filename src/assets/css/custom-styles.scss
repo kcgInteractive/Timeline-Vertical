@@ -27,26 +27,44 @@
 	}
 }
 #CharlesdeGanahl {
+	.Section_Description {
+		position: relative;
+		z-index: 2;
+	}
 	.telegram {
 		img {
 			width: 85%;
+		}
+		.text-wrapper {
+			width: 33%;
+			margin-left: 0;
+		}
+		.background {
+			width: 100%;
+			right: 0;
 		}
 	}
 	.video-bg {
 		background-image: url('/Timeline/media/kochTimeline/CharlesDeGanahl/Acme.jpg');
 		background-size: cover;
 		background-position: center bottom;
-		padding-bottom: 15rem;
+		padding-bottom: 23rem;
 		padding-top: 0;
+	}
+	.brilliant {
+		margin-bottom: -3rem;
 	}
 	.bio-video {
 		margin-top: 0;
 		position: relative;
 		bottom: 200px;
 		margin-bottom: -200px;
-		p {
-			width: 80%;
-			margin: 1rem auto;
+		// p {
+		// 	width: 80%;
+		// 	margin: 1rem auto;
+		// }
+		.text-column {
+			margin-top: 232px;
 		}
 	}
 }
@@ -58,12 +76,12 @@
 	}
 	.short-lived {
 		.text-column {
-			margin-top: 5rem;
-			margin-bottom: 5rem;
+			margin-top: 8rem;
+			margin-bottom: 8rem;
 		}
 	}
 }
-#FlatBroke {
+#UphillBattle {
 	.Section_Description {
 		div.columns {
 			margin-bottom: -5rem;
@@ -91,6 +109,7 @@
 		}
 		.text-column {
 			margin-top: 300px;
+			width: 145%;
 		}
 	}
 }
@@ -98,6 +117,11 @@
 	.float-right.wood-river {
 		.text-column {
 			margin-right: 0;
+		}
+		&.text-noBG {
+			.text-column {
+				padding: 0;
+			}
 		}
 	}
 	.ranching {
@@ -141,6 +165,9 @@
 		h2 {
 			margin-top: 4rem;
 		}
+	}
+	.varner-for-president {
+		width: 66.667%;
 	}
 }
 #TheHomecoming {

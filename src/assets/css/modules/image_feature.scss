@@ -62,4 +62,15 @@
 			color: #444;
 		}
 	}
+	.Image_Feature_Full.Image_Bottom{
+		.row{
+			display: flex;
+		}
+		.columns{
+			order: 2;
+		}
+		.columns ~ .columns{
+			order: 1;
+		}
+	}
 }

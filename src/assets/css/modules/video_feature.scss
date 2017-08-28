@@ -56,9 +56,9 @@
   }
   .background {
     position: relative;
-    height: 275px;
-    width: 500px;   
-    right: 10%;
+    height: 210px;
+    width: 100%;   
+    float: right;
     background-size: cover;
     background-position: center center;
   }
@@ -318,8 +318,18 @@
       font-weight: 500;
       margin: 0;
     }
+    p {
+      width: 80%;
+      margin: 1rem auto;
+
+    }
     button{
       margin-bottom: 2rem;
+    }
+  }
+  .text-column {
+    p {
+      text-align: left;
     }
   }
 }

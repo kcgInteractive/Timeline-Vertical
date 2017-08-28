@@ -27,38 +27,61 @@
 	}
 }
 #CharlesdeGanahl {
+	.Section_Description {
+		position: relative;
+		z-index: 2;
+	}
 	.telegram {
 		img {
 			width: 85%;
+		}
+		.text-wrapper {
+			width: 33%;
+			margin-left: 0;
+		}
+		.background {
+			width: 100%;
+			right: 0;
 		}
 	}
 	.video-bg {
 		background-image: url('/Timeline/media/kochTimeline/CharlesDeGanahl/Acme.jpg');
 		background-size: cover;
 		background-position: center bottom;
-		padding-bottom: 15rem;
+		padding-bottom: 23rem;
 		padding-top: 0;
+	}
+	.brilliant {
+		margin-bottom: -3rem;
 	}
 	.bio-video {
 		margin-top: 0;
 		position: relative;
 		bottom: 200px;
 		margin-bottom: -200px;
-		p {
-			width: 80%;
-			margin: 1rem auto;
+		// p {
+		// 	width: 80%;
+		// 	margin: 1rem auto;
+		// }
+		.text-column {
+			margin-top: 232px;
 		}
 	}
 }
 #ABusinessisBorn {
-	[id="166"] {
+	[id="32"] {
 		.text-column {
 			margin: 8rem 1rem 8rem 5.75rem;
 		}
 	}
-	
+	.short-lived {
+		.text-column {
+			margin-top: 8rem;
+			margin-bottom: 8rem;
+		}
+	}
 }
-#FlatBroke {
+#UphillBattle {
 	.Section_Description {
 		div.columns {
 			margin-bottom: -5rem;
@@ -86,6 +109,7 @@
 		}
 		.text-column {
 			margin-top: 300px;
+			width: 145%;
 		}
 	}
 }
@@ -93,6 +117,11 @@
 	.float-right.wood-river {
 		.text-column {
 			margin-right: 0;
+		}
+		&.text-noBG {
+			.text-column {
+				padding: 0;
+			}
 		}
 	}
 	.ranching {
@@ -135,6 +164,11 @@
 		}
 		h2 {
 			margin-top: 4rem;
+		}
+	}
+	.varner-for-president {
+		.content p{
+			width: 66.667%;
 		}
 	}
 }
@@ -222,13 +256,24 @@
 	.text-wrapper {
 		margin: 4rem 0 2rem;	
 	}
+<<<<<<< HEAD
 	h3 {
 		font-size: 1.75rem;
+=======
+	.thermometer {
+		.text-wrapper {
+			margin: 4rem 0 2rem;	
+		}
+		h3 {
+			font-size: 1.75rem;
+			margin-bottom: 0;
+		}
+>>>>>>> master
 	}
 }
 
 }
-#ASolidGasLiquidsIdea {
+#TimeofTransformation {
 	.Section_Description {
 		div.columns {
 			margin-bottom: -6rem;
@@ -251,14 +296,18 @@
 	}
 	.bill-hanna {
 		.text-column {
-			margin: 11rem 0;
+			margin: 4rem 0;
 			margin-left: 5.75rem;
+			.caption {
+				color: #fff;
+			}
 		}
 	}
 	.medford {
 		.text-column {
 			margin: 7rem 2.75rem;
 		}
+
 	}
 }
 #ANewFoundation {
@@ -274,6 +323,11 @@
 	}
 }
 #DavidKoch {
+	.Section_Description {
+		div.columns {
+			margin-bottom: -5rem;
+		}
+	}
 	.david-track {
 		div.columns {
 			margin-bottom: -5rem;
@@ -379,6 +433,9 @@
 	}
 	.donors {
 		padding: 5rem 0;
+		background: url('/Timeline/media/kochTimeline/CaringforOurCommunities/Texture.jpg') no-repeat;
+		background-size: cover;
+		background-position: center;
 		.background {
 			min-height: 145px;
 			width: 50%;
@@ -391,6 +448,14 @@
 			width: 42.667%;
 			margin-left: 28%;	
 		}
-		
+	}
+	.end {
+		h2 {
+			line-height: 1.75;
+			width: 105%;
+		}
+		div.columns {
+			width: 41.667%;
+		}
 	}
 }

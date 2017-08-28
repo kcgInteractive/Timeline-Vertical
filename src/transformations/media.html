@@ -164,8 +164,12 @@
 
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Video_Feature_2") { %}
 		<div class="small-12 medium-8 large-4 large-offset-3 end columns">
+			{%if(!String.IsNullOrEmpty(Media_Title)) { %}
 			<h4 class=="koch-blue">{%Media_Title%}</h4>
+			{% } #%}
+			{%if(!String.IsNullOrEmpty(Media_Description)) { %}
 			<p>{%Media_Description%}</p> 
+			{% } #%}
 			<div class="background" style="background-image: url('http://video.kochcreativegroupdev.com/thumbs/{%Option_Link%}.jpg')">
 				<button type="button" class="play-button play-button-1" data-video="{%Option_Link%}" data-aspect="{%Media_Aspect%}"></button>
 			</div>

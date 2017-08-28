@@ -194,7 +194,12 @@ h4 {
 	}
 
 }
-
+.caption {
+	font-size: 1rem;
+	font-style: italic;
+	color: $koch-blue;
+	line-height: 2;
+}
 .inline-video {
 	.background {
 		position: relative;

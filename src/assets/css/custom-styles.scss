@@ -80,6 +80,12 @@
 			margin-bottom: 8rem;
 		}
 	}
+	.background-w-video {
+		.text-column {
+			margin-left: 16.667%;
+		}
+		
+	}
 }
 #UphillBattle {
 	.Section_Description {
@@ -421,6 +427,70 @@
 		}
 		div.columns {
 			width: 41.667%;
+		}
+	}
+}
+#JoeMoeller {
+	.refinery {
+		.text-wrapper {
+			margin: 8rem 0 -7rem;
+		}
+		.image-wrapper {
+				margin-bottom: -7rem;
+		}
+	}
+	.great-northern {
+		margin-bottom: -2.5rem;
+		.text-column {
+			margin-top: 6rem;
+			margin-bottom: 6rem;
+		}
+	}
+	.background-w-video {
+		padding: 0;
+		.row {
+			padding: 0;
+		}
+		p {
+			font-weight: 400;
+		}
+		.text-column {
+			margin-right: 3.75rem;
+			p {
+				width: auto;
+				padding: 2.5rem 2rem;
+				margin: 0 1rem;
+				color: $gray;
+				background-color: #fff;
+			}
+		}
+		.media-column { 
+			background: url('/Timeline/media/kochTimeline/JoeMoeller/Texture.png') no-repeat;
+			background-size: contain;
+			background-position: top;
+			width: 33%;
+			padding: 7rem 1rem;
+			margin-top: 2.5rem;
+			h2 {
+				letter-spacing: 1px;
+				line-height: 1.75;
+			}
+			p {
+				color: $light-gray;
+				font-size: 0.875rem;
+			}
+		}
+		.background {
+			width: 100%;
+			max-width: inherit;
+			height: 205px;
+		}
+	}
+}
+#EraofAcquisition {
+	.Section_Description {
+		div.columns {
+			margin-bottom: -28rem;
 		}
 	}
 }

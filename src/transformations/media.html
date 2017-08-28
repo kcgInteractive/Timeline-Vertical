@@ -206,7 +206,7 @@
 	  <div class="background" style="background-image: url('http://video.kochcreativegroupdev.com/thumbs/{%Option_Link%}.jpg');">
         <button type="button" class="play-button play-button-1" data-video="{%Option_Link%}" data-aspect="{%Media_Aspect%}"></button>
       </div>
-      <p><em>{%Media_Description%}</em></p>
+      {%Media_Description%}
     {% } %}
 
     {% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Custom_Charles_Shares") { %}

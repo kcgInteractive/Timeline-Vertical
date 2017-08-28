@@ -251,6 +251,10 @@
 		// position: relative;
   //   	top: -230px;
   //   	z-index: -1;
+}
+.thermometer {
+	.text-wrapper {
+		margin: 4rem 0 2rem;	
 	}
 	.thermometer {
 		.text-wrapper {
@@ -261,6 +265,7 @@
 			margin-bottom: 0;
 		}
 	}
+}
 
 }
 #TimeofTransformation {
@@ -351,6 +356,31 @@
 		background-image: url("/Timeline/media/kochTimeline/DavidKoch/dinosaur.jpg");
 		padding-bottom: 40rem;
 		margin-bottom: 5rem;
+		.image-container{
+			img:nth-child(1){
+				left: 0;
+				top: -90px;
+			}
+			img:nth-child(2){
+				left: 50%;
+				top: 50%;
+				transform: translate(0%, -50%);
+				z-index: 10;
+				width: 93%;
+			}
+			img:nth-child(3){
+				left: 0;
+				bottom: -42px;
+				width: 65%;
+				z-index: 10;
+			}
+			@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+				margin: 6rem auto;
+				img:nth-child(2){
+				transform: translate(-40%, -50%);
+			}
+			}
+		}
 	}
 	.influential {
 		p {

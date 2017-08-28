@@ -99,4 +99,21 @@
     margin-top: 20rem;
   }
 }
-
+.Multi_Image_Feature.left{
+  .columns{
+    float: right;
+  }  
+  .columns ~ .columns{
+    float: left;
+  }
+  .image-container{
+    img:nth-child(1) {
+    }
+    img:nth-child(2) {
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+    img:nth-child(3) {
+    }
+  }
+}

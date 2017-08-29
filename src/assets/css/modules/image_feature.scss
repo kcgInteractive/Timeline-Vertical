@@ -42,6 +42,44 @@
 			padding: 0;
 		}
 	}
+	&.kiiReveal {
+		
+		.image-wrapper {
+			position:relative;
+		}
+		img {
+			position: absolute;
+			left:0;
+			top:0;
+			// transform: translate(-50%, -50%);
+		}
+		img:first-of-type {
+			
+		}
+		img:last-of-type {
+		    opacity: 0;
+		    transition: opacity .5s $ease .75s;
+			-webkit-mask: url('/Timeline/media/kochTimeline/kiiRevealMask.png') no-repeat;
+			-webkit-mask-size: 1500% 100%;
+			-webkit-mask-position: 100% 100%;
+			animation: maskOut .75s steps(14) .25s forwards;
+		    -webkit-animation-fill-mode: backwards;
+		    animation-fill-mode: backwards;
+		    background-position: 0 bottom;
+		}
+		&:hover {
+			img:last-of-type {
+				opacity: 1;
+				transition: opacity .75s $ease;
+				-webkit-mask: url('/Timeline/media/kochTimeline/kiiRevealMask.png') no-repeat;
+				-webkit-mask-size: 1500% 100%;
+				animation: maskIn .75s steps(14) .25s forwards;
+				-webkit-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+				background-position: 0 bottom;
+			}
+		}
+	}
 }
 .Image_Feature_Left{
 	.text-wrapper {

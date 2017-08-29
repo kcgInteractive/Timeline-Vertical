@@ -211,6 +211,16 @@
 	{% } #%}
 	{% } %}
 
+  {% if(Module_Type == "Whats_Next_Custom") { %}
+    <div class="image-wrapper">
+      {^SubLevelPlaceHolder^}
+    </div>
+     <div class="row">
+      <div class="large-3 large-offset-8 columns end text-wrapper">
+        {%Module_Copy%}
+      </div>
+     </div>
+  {% } %}
 
 
 {% if(Module_Type == "Hero_Module") { %}

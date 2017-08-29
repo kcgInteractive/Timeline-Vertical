@@ -80,6 +80,12 @@
 			margin-bottom: 8rem;
 		}
 	}
+	.background-w-video {
+		.text-column {
+			margin-left: 16.667%;
+		}
+		
+	}
 }
 #UphillBattle {
 	.Section_Description {
@@ -451,6 +457,179 @@
 		}
 		div.columns {
 			width: 41.667%;
+		}
+	}
+}
+#JoeMoeller {
+	.refinery {
+		.text-wrapper {
+			margin: 8rem 0 -7rem;
+		}
+		.image-wrapper {
+				margin-bottom: -7rem;
+		}
+	}
+	.great-northern {
+		margin-bottom: -2.5rem;
+		.text-column {
+			margin-top: 6rem;
+			margin-bottom: 6rem;
+		}
+	}
+	.background-w-video {
+		padding: 0;
+		.row {
+			padding: 0;
+		}
+		p {
+			font-weight: 400;
+		}
+		.text-column {
+			margin-right: 3.75rem;
+			p {
+				width: auto;
+				padding: 2.5rem 2rem;
+				margin: 0 1rem;
+				color: $gray;
+				background-color: #fff;
+			}
+		}
+		.media-column { 
+			background: url('/Timeline/media/kochTimeline/JoeMoeller/Texture.png') no-repeat;
+			background-size: contain;
+			background-position: top;
+			width: 33%;
+			padding: 7rem 1rem;
+			margin-top: 2.5rem;
+			h2 {
+				letter-spacing: 1px;
+				line-height: 1.75;
+			}
+			p {
+				color: $light-gray;
+				font-size: 0.875rem;
+			}
+		}
+		.background {
+			width: 100%;
+			max-width: inherit;
+			height: 205px;
+		}
+	}
+}
+#EraofAcquisition {
+	.Section_Description {
+		div.columns {
+			margin-bottom: -28rem;
+		}
+	}
+	.georgia-pacific {
+		.text-column {
+			width: 160%;
+			margin: 20rem 1rem;
+		}
+	}
+	.test-drive {
+		margin-bottom: -2rem;
+		.text-column {
+			margin: 12rem 1rem;
+		}
+	}
+	.pete-correll {
+		padding-top: 0;
+		padding-bottom: 8rem;
+		.video-copy {
+			width: 33%;
+			margin-top: 4rem;
+			right: 14%;
+		}
+	}
+	.last-module {
+		background: url('/Timeline/media/kochTimeline/EraofAcquisition/Image_Feature_1-2.jpg') no-repeat;
+		background-size: cover;
+		background-position: center;
+		margin-top: 0;
+		.caption {
+			margin: 12rem auto;
+			width: 80%;
+			font-family: $museo;
+			color: #fff;
+			font-size: 1rem;
+			font-weight: 500;
+			text-transform: none;
+
+		}
+	}
+}
+#DaveRobertson {
+	.Section_Description {
+		div.columns {
+			margin-bottom: -5rem;
+		}
+	}
+	.dave-desk {
+		margin-bottom: -8rem;
+		.text-column {
+			margin: 3rem 6rem 8rem 0;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		
+	}
+	.last-module {
+		margin-bottom: 5rem;
+		.quote-column {
+			margin-top: 18rem;
+			h2 {
+				line-height: 1.75;
+				padding-right: 3rem;
+			}
+		}
+	}
+}
+#AClearConnection {
+	.Section_Description {
+		div.columns {
+			margin-bottom: -5rem;
+		}
+	}
+	.powerful-partnership {
+		margin-bottom: 2rem;
+	}
+	.looking-glass {
+		background: url('/Timeline/media/kochTimeline/AClearConnection/CC_GuardianAcquisition.jpg') no-repeat;
+		background-size: cover;
+		background-position: center;
+		.content {
+			margin: 6rem 0;
+			padding-left: 20rem;
+			padding-right: 0;
+			.play-button {
+				top: 7%;
+				left: 30%;
+			}
+			p {
+				color: #fff;
+			}
+		}
+	}
+	.burj {
+		position: relative;
+		z-index: 2;
+		bottom: 225px;
+		margin-bottom: -225px;
+		.text-column {
+			margin: 25rem 0 4rem;
+			padding-top: 0;
+		}
+	}
+}
+#WhatsNext {
+	.vision {
+		margin-bottom: 2rem;
+		.full-image {
+			background-position: right center;
+			background-size: contain;
 		}
 	}
 }

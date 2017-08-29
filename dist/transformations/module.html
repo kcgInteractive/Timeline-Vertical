@@ -19,17 +19,14 @@
 			{%Module_Copy%}
 			<p>{%Module_Subtitle%}</p>
 		</div>
-		<div class="image">
-			{^SubLevelPlaceHolder^}
-		</div>
-	</div>
+		{^SubLevelPlaceHolder^}
+    
 
 	{% } #%} 
 	
 	{% if(Module_Type == "Quote_2") { %}
 	<div class="row">
 		<div class="small-12 medium-8 medium-offset-2 large-5 large-offset-1 columns end">
-			<p>Quote 2</p>
 			<h3>{%Module_Copy%}</h3>
 			<p>{%Module_Subtitle%}</p>
 		</div>
@@ -318,7 +315,7 @@
 
   {% if(Module_Type == "50-50_with_media") { %}
   <div class="row">
-    <div class="columns end large-4 medium-6 small-10 large-offset-2 medium-offset-0 small-offset-1 text-column">
+    <div class="columns end large-4 medium-6 small-10 large-offset-0 medium-offset-0 small-offset-1 text-column">
       {% if(!String.IsNullOrEmpty(Module_Year)) { %}
         <p class="date">{%Module_Year%}</p>
       {% } %}
@@ -327,7 +324,7 @@
       {% } %}
       {%Module_Copy%}
     </div>
-    <div class="columns end large-3 medium-6 small-10 large-offset-1 medium-offset-0 small-offset-1 media-column">
+    <div class="columns end large-3 medium-6 small-10 large-offset-2 medium-offset-0 small-offset-1 media-column">
       {^SubLevelPlaceholder^}
     </div>
   </div>
@@ -353,6 +350,19 @@
     {^SubLevelPlaceholder^}
     <div class="large-4 medium-12 small-12 large-offset-5 medium-offset-3 small-offset-0 columns end quote-text">
       {%Module_Copy%}
+    </div>
+  </div>
+  {% } #%}
+
+  {% if(Module_Type == "Dave_Robertson_Custom") { %}
+  <div class="row">
+    <div class="small-12 medium-8 large-6 columns end quote-column">
+      {%Module_Copy%}
+    </div>
+    <div class="small-12 medium-4 large-3 columns large-offset-2 end">
+      <h2>{%Module_Title%}</h2>
+      <p>{%Module_Subtitle%}</p>
+      {^SubLevelPlaceHolder^}
     </div>
   </div>
   {% } #%}

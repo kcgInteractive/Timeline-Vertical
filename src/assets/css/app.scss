@@ -61,7 +61,7 @@ h4 {
 }
 .float-right {
 	.row div {
-		float: right;
+		float: right!important;
 	}
 	.full-image {
 		background-position: right center;
@@ -97,6 +97,9 @@ h4 {
 }
 .gray {
 	color: $gray;
+	p {
+		color: $gray;
+	}
 }
 .light-gray {
 	color: $light-gray;

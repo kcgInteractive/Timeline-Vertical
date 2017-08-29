@@ -154,6 +154,10 @@
 			<div class="intro-image"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}"/></div>
 			{%Media_Description%}
 	{% } %}
+	
+	{% if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Whats_Next_Custom") { %}
+		<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}">
+	{% } %}
 
 {% } #%}
 

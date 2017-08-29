@@ -7,6 +7,9 @@ $blue: #96C7D4;
 $dark-blue: #6E97A2;
 $koch-blue: #00A8E1;
 
+$ease : cubic-bezier(0.44, 0.2, 0, 1.01);
+
+
 $max : "max-width:";
 @function max($pxSize) {
 	@return #{$max} ($pxSize)+px;
@@ -14,4 +17,19 @@ $max : "max-width:";
 $min : "min-width:";
 @function min($pxSize) {
 	@return #{$min} ($pxSize)+px; 
+}
+
+@keyframes maskIn {
+	from {
+		-webkit-mask-position: 0% 0%;
+	} to {
+		-webkit-mask-position: 100% 0%;
+	}
+}
+@keyframes maskOut {
+	from {
+		-webkit-mask-position: 100% 0%;
+	} to {
+		-webkit-mask-position: 0% 0%;
+	}
 }

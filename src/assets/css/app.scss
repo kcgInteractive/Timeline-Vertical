@@ -268,6 +268,30 @@ h4 {
   }
 }
 
+.video-list-header {
+	h2 {
+		text-align: center;
+		margin-top: 3rem;
+	}
+}
+.video-list {
+	margin-bottom: 5rem;
+	.background {
+	    position: relative;
+	    width: 100%;
+	    padding-top: 56.25%;
+	    background-size: cover;
+	    background-position: center center;
+	    margin-bottom: 2rem;
+	}
+	.play-button {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
 @import 'hero-images.scss';
 @import 'modules.scss';
 @import 'custom-styles.scss';

@@ -285,3 +285,10 @@ function mapMaskCSS(){
 if($('.draggableMap').length) {
 	mapMaskCSS();
 }
+// on click of journey on the map, show info
+$('#journey > g').on('click touchstart', function(){
+  var $el = $(this).attr('id');
+  $(this).addClass('active').siblings().removeClass('active');
+  $('.' + $el).addClass('active').siblings().removeClass('active');
+
+});

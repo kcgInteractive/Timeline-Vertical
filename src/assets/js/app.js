@@ -1,5 +1,50 @@
 $(document).foundation();
 
+// LANDING PAGE SCRIPTS
+function landingSection(){
+
+  // SLIDE ATTRIBUTES FOR WIDTH AND SETTING UP MASK WIDTH
+  var length = $('#landingPageVisual').children().length,
+    screenWidth = $(window).width(),
+    slideImage = $('.landingPageImages'),
+    slideText = $('.landingPageSlideText'),
+    $length = screenWidth/length,
+    slide = $('.landingPageSlideText'),
+    slideNav = $('.landingPageSlideNav');
+
+  // SLIDE HOVER FUNCTIONALITY
+  if($(window).width() >=  769) {
+    slide.on({
+      mouseenter : function(){
+        // addclass to parent slide and get its number
+        $(this).addClass('active');
+        var number = $(this).attr('data-number');
+        // using that number add class to the mask
+        $('.landingPageImages[data-slide="' + number + '"]').addClass('active');
+      },
+      mouseleave : function(){
+        // reset upon leaving the area
+        $(this).removeClass('active');
+        var number = $(this).attr('data-number');
+        $('.landingPageImages[data-slide="' + number + '"]').removeClass('active');
+      }
+    });
+  } else {
+    // mobile functionality of the landing page
+    // need to revisit this when mobile comes back around
+    slide.on('click', function(){
+      $(this).addClass('active').siblings().removeClass('active');
+      var number = $(this).attr('data-number');
+      $('.landingPageImages[data-slide="' + number + '"]').addClass('active').siblings().removeClass('active');
+    });
+  }
+
+}
+$(document).ready(function() {
+  landingSection();
+});
+// end
+
 //Menu Navigation
 $('.button-wrapper').on('click', function() {
   $('.main-menu').addClass('active');

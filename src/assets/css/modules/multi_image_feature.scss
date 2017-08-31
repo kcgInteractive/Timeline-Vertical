@@ -117,3 +117,15 @@
     }
   }
 }
+.Multi_Image_Feature.left.ussr {
+  .relative {
+    padding: 0;
+  }
+  .image-container img:nth-child(1) {
+    left: 65%;
+    top: -25%;
+  }
+  .image-container img:nth-child(2) {
+    transform: translate(-5%, -50%);
+  }
+}

@@ -101,7 +101,9 @@
 	{% } %}
 	
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Quote_1") { %}
-		<div class="image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}"/></div>
+		<div class="image">
+			<div class="image-wrapper"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}"/></div>
+		</div>
 	{% } %}
 
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Quote_2") { %}
@@ -148,6 +150,15 @@
     	</div>
 	{% } %}
 
+	{% if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Dave_Robertson_Custom") { %}
+			<div class="intro-image"><img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}"/></div>
+			{%Media_Description%}
+	{% } %}
+	
+	{% if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Whats_Next_Custom") { %}
+		<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}">
+	{% } %}
+
 {% } #%}
 
 {%if(Media_Type == "graphic") { %}
@@ -160,19 +171,22 @@
 			<div class="background" style="background-image: url('http://video.kochcreativegroupdev.com/thumbs/{%Option_Link%}.jpg')">
 				<button type="button" class="play-button play-button-1" data-video="{%Option_Link%}" data-aspect="{%Media_Aspect%}"></button>	
 			</div>
+			<h2>{%Media_Title%}</h2>
+			{%Media_Description%}
 	{% } %}
 
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Video_Feature_2") { %}
 		<div class="small-12 medium-8 large-4 large-offset-3 end columns">
+			
+			<div class="background" style="background-image: url('http://video.kochcreativegroupdev.com/thumbs/{%Option_Link%}.jpg')">
+				<button type="button" class="play-button play-button-1" data-video="{%Option_Link%}" data-aspect="{%Media_Aspect%}"></button>
+			</div>
 			{%if(!String.IsNullOrEmpty(Media_Title)) { %}
 			<h4 class=="koch-blue">{%Media_Title%}</h4>
 			{% } #%}
 			{%if(!String.IsNullOrEmpty(Media_Description)) { %}
 			<p>{%Media_Description%}</p> 
 			{% } #%}
-			<div class="background" style="background-image: url('http://video.kochcreativegroupdev.com/thumbs/{%Option_Link%}.jpg')">
-				<button type="button" class="play-button play-button-1" data-video="{%Option_Link%}" data-aspect="{%Media_Aspect%}"></button>
-			</div>
 		</div>	
 	{% } %}
 
@@ -206,7 +220,7 @@
 	  <div class="background" style="background-image: url('http://video.kochcreativegroupdev.com/thumbs/{%Option_Link%}.jpg');">
         <button type="button" class="play-button play-button-1" data-video="{%Option_Link%}" data-aspect="{%Media_Aspect%}"></button>
       </div>
-      <p><em>{%Media_Description%}</em></p>
+      {%Media_Description%}
     {% } %}
 
     {% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Custom_Charles_Shares") { %}
@@ -244,7 +258,7 @@
 {% } #%}
 
 {%if(Media_Type == "svg-code") { %}
-	<div class="custom-code">{%Media_Type%} {%Option_SVG_Code%}</div>
+	{%Option_SVG_Code%}
 {% } #%}
 
 {%if(Media_Type == "js-code") { %}

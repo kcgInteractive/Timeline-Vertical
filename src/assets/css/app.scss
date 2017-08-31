@@ -61,7 +61,7 @@ h4 {
 }
 .float-right {
 	.row div {
-		float: right;
+		float: right!important;
 	}
 	.full-image {
 		background-position: right center;
@@ -97,6 +97,9 @@ h4 {
 }
 .gray {
 	color: $gray;
+	p {
+		color: $gray;
+	}
 }
 .light-gray {
 	color: $light-gray;
@@ -263,6 +266,30 @@ h4 {
       box-shadow: inset 0 1px 3px 0 rgba(0,45,91,0.5);
     }
   }
+}
+
+.video-list-header {
+	h2 {
+		text-align: center;
+		margin-top: 3rem;
+	}
+}
+.video-list {
+	margin-bottom: 5rem;
+	.background {
+	    position: relative;
+	    width: 100%;
+	    padding-top: 56.25%;
+	    background-size: cover;
+	    background-position: center center;
+	    margin-bottom: 2rem;
+	}
+	.play-button {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
 
 @import 'hero-images.scss';

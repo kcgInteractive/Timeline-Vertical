@@ -52,6 +52,18 @@
 		<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}"/>
 	{% } %}
 
+	{% if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Caption_One") { %}
+		<div class="row">
+			<div class="small-12 medium-6 columns">
+				<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%}"/>
+			</div>
+			<div class="small-12 medium-6 columns">
+				{%Media_Description%}
+			</div>
+		</div>
+
+	{% } %}
+
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Showcase_1") { %}
 		<div class="text-option">
 			<div class="large-6 medium-6 small-12 columns end image-container" style="background-image: url('/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}');">&nbsp;</div>
@@ -72,9 +84,6 @@
 	{%if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "Image_Showcase_2") { %}
 		<div class="text-option">	
 			<div class="large-6 medium-10 small-12 large-offset-0 medium-offset-1 small-offset-0 columns end ">
-				<div class="optional-copy">
-		            <p>{%Documents[NodeAliasPath].Parent.GetValue("Module_Copy")%}</p>
-		        </div>
 				<div class="image-container" style="background-image: url('/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}')">&nbsp;</div>
 				<div class="text-content">
 					<div class="hr">&nbsp;</div>
@@ -82,6 +91,14 @@
 					<p>{%Media_Description%}</p>
 				</div>  
 			</div>
+			{%if(!String.IsNullOrEmpty(Documents[NodeAliasPath].Parent.GetValue("Module_Copy"))) { %}
+				<div class="large-3 medium-10 small-12 large-offset-2 medium-offset-1 small-offset-0 columns end">
+					<div class="optional-copy">
+						<h2>{%Documents[NodeAliasPath].Parent.GetValue("Module_Title")%}</h2>
+			            <p>{%Documents[NodeAliasPath].Parent.GetValue("Module_Copy")%}</p>
+			        </div>
+			    </div>
+		    {% } %}
 		</div>
 	{% } %}
 	

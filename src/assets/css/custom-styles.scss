@@ -395,7 +395,7 @@
 	.Multi_Image_Feature {
 		background-image: url("/Timeline/media/kochTimeline/DavidKoch/dinosaur.jpg");
 		padding-bottom: 40rem;
-		margin-bottom: 5rem;
+		margin-bottom: -11rem;
 		.image-container{
 			img:nth-child(1){
 				left: 0;
@@ -421,6 +421,11 @@
 			}
 			}
 		}
+	}
+	.Image_Showcase_2.right {
+		.text-option div.columns {
+	  		margin-bottom: -5rem;
+	  	}
 	}
 	.influential {
 		p {

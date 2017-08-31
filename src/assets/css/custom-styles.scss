@@ -635,8 +635,20 @@
 			margin-bottom: -5rem;
 		}
 	}
+	.molex-img {
+		margin-bottom: -5rem;
+		.full-image {
+			padding: 16rem 0;
+		}
+	}
 	.powerful-partnership {
-		margin-bottom: 2rem;
+		div.columns {
+			margin-bottom: -3rem;
+		}
+		.optional-copy {
+			margin-top: 10rem;
+		}
+		
 	}
 	.looking-glass {
 		background: url('/Timeline/media/kochTimeline/AClearConnection/CC_GuardianAcquisition.jpg') no-repeat;

@@ -25,6 +25,11 @@
 			margin-top: 11rem;
 		}
 	}
+	[id="269"] {
+		div.columns {
+			margin-left: 29%;
+		}
+	}
 }
 #CharlesdeGanahl {
 	.Section_Description {
@@ -154,6 +159,14 @@
 	}
 }
 #NewEndeavors {
+	.wedding {
+		.outer {
+			margin-bottom: -2rem;
+		}
+		.text-column {
+			margin-top: 4rem;
+		}
+	}
 	.float-right.wood-river {
 		.text-column {
 			margin-right: 0;
@@ -225,7 +238,27 @@
 	}
 	.dear-boys {
 		.text-column {
-			margin: 9rem 0 9rem 3rem;
+			margin: 6rem 0 6rem 3rem;
+		}
+	}
+	.background-w-video {
+		p {
+			color: $gray;
+			font-weight: normal;
+		}
+		p.caption {
+			color: $koch-blue;
+		}
+		h2 {
+			margin-top: 3rem;
+			width: 85%;
+		}
+		.media-column {
+			margin-left: 0;
+			margin-right: 16.66667%;
+			div.background {
+				float: left !important;
+			}
 		}
 	}
 }
@@ -676,6 +709,9 @@
 			margin: 25rem 0 4rem;
 			padding-top: 0;
 		}
+	}
+	.two-videos {
+		background-image: url('/Timeline/media/kochTimeline/AClearConnection/CC_vid-background.jpg');
 	}
 }
 #WhatsNext {

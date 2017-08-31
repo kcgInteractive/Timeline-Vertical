@@ -26,11 +26,12 @@
 		}
 	}
 	@media screen and (max-width: 63.9375em) {
+		padding-bottom: 0;
 		.section-hero{
 			height: 53vh;
 		}
 		[id="4"].Image_Feature_Full{
-			bottom: 45px;
+			bottom: 75px;
 			.text-column{
 				margin: 2rem 1rem;
 			}
@@ -38,7 +39,24 @@
 				height: 160px;
 			}
 		} 
-
+		[id="268"] .text-wrapper{
+			margin-left: 0;
+			margin-top: 2rem;		
+		}
+		[id="269"]{
+			margin-top: 0;
+			margin-bottom: 0;
+			.background{
+				bottom: 10rem;
+				margin-bottom: -10rem;
+				position: relative;
+			}
+		}
+		.Image-Showcase-nav{
+			height: 45px;
+			bottom: 7px;
+			left: 0;
+		}
 	}
 }
 #CharlesdeGanahl {

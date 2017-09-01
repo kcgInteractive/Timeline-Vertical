@@ -61,7 +61,28 @@ $blueOne: rgb(127, 174, 187);
 	background: linear-gradient(to right,  #98c6d5 0%,#3ebdec 50%,#134b8c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#98c6d5', endColorstr='#134b8c',GradientType=1 ); /* IE6-9 */
 }
-
+.home-title {
+	position: absolute;
+	left: 1rem;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: left;
+	h1 {
+		color: $koch-blue;
+		font-size: 1.15em;
+		font-weight: 600;
+		float: left;
+		letter-spacing: 0;
+		position: relative;
+		span{
+			font-weight: 400;
+			font-size: .775rem;
+			display: block;
+			color: $gray;
+		}
+	}
+}
 #landingPage {
 	width: 100%;
 	height: 100%;

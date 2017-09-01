@@ -135,6 +135,10 @@
     	{%Media_Description%}</p>
     {% } %}
 
+    {% if(Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "50-50_images_video") { %}
+		<img src="/Timeline/media/kochTimeline/{% CurrentDocument.SectionTitle %}/{%Option_File%}" alt="{%Media_Title%} Image">
+    {% } %}
+
 	{% if (Documents[NodeAliasPath].Parent.GetValue("Module_Type") == "New_Endeavors_Custom") { %}
 	  <div class="columns end large-3 medium-3 small-10 -large-offset-0 medium-offset-0 small-offset-1" data-equalizer-watch>
         <div class="one-of-three">

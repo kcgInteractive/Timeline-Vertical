@@ -2,6 +2,9 @@
 	.Section_Description {
 		div.columns {
 			margin-bottom: -38rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.quanah-bg {
@@ -18,21 +21,35 @@
 		bottom: 110px;
 		margin-bottom: -195px;
 		z-index: -1;
+		@media(max-width: 40rem) {
+			margin-bottom: 0;
+			bottom: 0;
+		}
 		.full-image {
 			background-position: right;
 		}
 		.text-column {
 			margin: 6rem 1rem;
+			@media(max-width: 64rem) {
+				margin: 2rem 1rem;
+			}
 		}
 	}
 	[id="268"] {
 		.text-wrapper {
 			margin-top: 11rem;
+			@media(max-width: 64rem) {
+				margin: 2rem 0; 
+				padding: 0 2rem;
+			}
 		}
 	}
 	[id="269"] {
 		div.columns {
 			margin-left: 29%;
+			@media(max-width: 64rem) {
+				margin-left: 0;
+			}
 		}
 	}
 }
@@ -63,12 +80,18 @@
 	}
 	.brilliant {
 		margin-bottom: -3rem;
+		@media(max-width: 40rem) {
+			margin-bottom: 0;
+		}
 	}
 	.bio-video {
 		margin-top: 0;
 		position: relative;
 		bottom: 200px;
 		margin-bottom: -200px;
+		@media(max-width: 40rem) {
+			margin-bottom: 0;
+		}
 		// p {
 		// 	width: 80%;
 		// 	margin: 1rem auto;
@@ -101,6 +124,9 @@
 	.Section_Description {
 		div.columns {
 			margin-bottom: -5rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 	}
 	[id="38"] {
@@ -119,6 +145,9 @@
 		position: relative;
 		bottom: 235px;
 		margin-bottom: -200px;
+		@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		.full-image {
 			min-height: 900px;
 			background-position: right;
@@ -130,6 +159,9 @@
 	}
 	.ussr {
 		margin-bottom: -8rem;
+		@media(max-width: 40rem) {
+			margin-bottom: 0;
+		}
 		.three-image-text {
 			width: 100%;
 			max-width: 15.75rem;
@@ -144,6 +176,9 @@
 			position: relative;
 			z-index: 10;
 			margin-bottom: -5rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 		p {
 			font-size: 1rem;
@@ -167,6 +202,9 @@
 	.wedding {
 		.outer {
 			margin-bottom: -2rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 		.text-column {
 			margin-top: 4rem;
@@ -208,12 +246,18 @@
 	.Section_Description {
 		div.columns {
 			margin-bottom: -28rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.life-of-varner {
 		div.columns {
 			margin-left: 25%;
 			margin-bottom: -10rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 		.background {
 			min-height: 275px;
@@ -239,6 +283,9 @@
 	.Section_Description {
 		div.columns {
 			margin-bottom: -5rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}	
 	}
 	.phone-call {
@@ -276,11 +323,17 @@
 	.Section_Description {
 		div.columns {
 			margin-bottom: -6rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}	
 	}
 	.arrival {
 		.image-wrapper, .text-wrapper {
 			margin-bottom: -8rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 		
 	}
@@ -296,6 +349,9 @@
 	}
 	.retail-gas {
 		margin-bottom: -250px;
+		@media(max-width: 40rem) {
+			margin-bottom: 0;
+		}
 		.text-column {
 			margin: 8rem 1rem;
 			margin-right: 0;
@@ -303,6 +359,9 @@
 	}
 	.pipeline {
 		margin-bottom: -200px;
+		@media(max-width: 40rem) {
+			margin-bottom: 0;
+		}
 	}
 	.global-image {
 		background-image: url("/Timeline/media/kochTimeline/AggressiveExploration/Text_Module_White.jpg");
@@ -316,6 +375,9 @@
 			margin-bottom: -40rem;
 			position: relative;
 			z-index: 1;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.Image_Feature_Full{
@@ -355,10 +417,16 @@
 	.Section_Description {
 		div.columns {
 			margin-bottom: -6rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.varner-quote {
 		margin-bottom: -7rem;
+		@media(max-width: 40rem) {
+			margin-bottom: 0;
+		}
 		.text-column {
 			margin-top: 6rem;
 			margin-bottom: 6rem;
@@ -435,6 +503,9 @@
 	.Section_Description {
 		div.columns {
 			margin-bottom: -5rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.Image_Feature_9 {
@@ -447,11 +518,17 @@
 	.Section_Description {
 		div.columns {
 			margin-bottom: -5rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.david-track {
 		div.columns {
 			margin-bottom: -5rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.david-bio {
@@ -459,6 +536,9 @@
 			margin: 5rem 0;
 			padding-left: 16.667%;
 			margin-bottom: -10rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 		.text-wrapper {
 			margin-top: 0;
@@ -467,6 +547,9 @@
 			padding: 2rem;
 			width: 27%;
 			margin-bottom: -10rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.moeller-video {
@@ -482,6 +565,9 @@
 		background-image: url("/Timeline/media/kochTimeline/DavidKoch/dinosaur.jpg");
 		padding-bottom: 40rem;
 		margin-bottom: -11rem;
+		@media(max-width: 40rem) {
+			margin-bottom: 0;
+		}
 		.image-container{
 			img:nth-child(1){
 				left: 0;
@@ -511,6 +597,9 @@
 	.Image_Showcase_2.right {
 		.text-option div.columns {
 	  		margin-bottom: -5rem;
+	  		@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 	  	}
 	}
 	.influential {
@@ -528,6 +617,9 @@
 	.Section_Description {
 		div.columns {
 			margin-bottom: -2rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.corporate-commitment {
@@ -538,6 +630,9 @@
 		}
 		.image-wrapper {
 			margin-bottom: -7rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.small-beginnings {
@@ -546,6 +641,9 @@
 		background-position: right bottom;
 		div.columns {
 			margin-bottom: -12rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.lessons-learned {
@@ -589,13 +687,22 @@
 	.refinery {
 		.text-wrapper {
 			margin: 8rem 0 -7rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 		.image-wrapper {
-				margin-bottom: -7rem;
+			margin-bottom: -7rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.great-northern {
 		margin-bottom: -2.5rem;
+		@media(max-width: 40rem) {
+			margin-bottom: 0;
+		}
 		.text-column {
 			margin-top: 6rem;
 			margin-bottom: 6rem;
@@ -646,6 +753,9 @@
 	.Section_Description {
 		div.columns {
 			margin-bottom: -28rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.georgia-pacific {
@@ -656,6 +766,9 @@
 	}
 	.test-drive {
 		margin-bottom: -2rem;
+		@media(max-width: 40rem) {
+			margin-bottom: 0;
+		}
 		.text-column {
 			margin: 12rem 1rem;
 		}
@@ -693,10 +806,17 @@
 	.Section_Description {
 		div.columns {
 			margin-bottom: -5rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.dave-desk {
 		margin-bottom: -8rem;
+		@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
+
 		.text-column {
 			margin: 3rem 6rem 8rem 0;
 			padding-left: 0;
@@ -719,10 +839,18 @@
 	.Section_Description {
 		div.columns {
 			margin-bottom: -5rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
+
 		}
 	}
 	.molex-img {
 		margin-bottom: -5rem;
+		@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
+
 		.full-image {
 			padding: 16rem 0;
 		}
@@ -730,6 +858,10 @@
 	.powerful-partnership {
 		div.columns {
 			margin-bottom: -3rem;
+			@media(max-width: 40rem) {
+				margin-bottom: 0;
+			}
+
 		}
 		.optional-copy {
 			margin-top: 10rem;
@@ -758,6 +890,9 @@
 		z-index: 2;
 		bottom: 225px;
 		margin-bottom: -225px;
+		@media(max-width: 40rem) {
+			margin-bottom: 0;
+		}
 		.text-column {
 			margin: 25rem 0 4rem;
 			padding-top: 0;

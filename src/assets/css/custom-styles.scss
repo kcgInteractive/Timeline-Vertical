@@ -35,6 +35,39 @@
 			margin-left: 29%;
 		}
 	}
+	@media screen and (max-width: 63.9375em) {
+		padding-bottom: 0;
+		.section-hero{
+			height: 53vh;
+		}
+		[id="4"].Image_Feature_Full{
+			bottom: 75px;
+			.text-column{
+				margin: 2rem 1rem;
+			}
+			img{
+				height: 160px;
+			}
+		} 
+		[id="268"] .text-wrapper{
+			margin-left: 0;
+			margin-top: 2rem;		
+		}
+		[id="269"]{
+			margin-top: 0;
+			margin-bottom: 0;
+			.background{
+				bottom: 10rem;
+				margin-bottom: -10rem;
+				position: relative;
+			}
+		}
+		.Image-Showcase-nav{
+			height: 45px;
+			bottom: 7px;
+			left: 0;
+		}
+	}
 }
 #CharlesdeGanahl {
 	.Section_Description {
@@ -503,8 +536,8 @@
 			@media screen and (min-width: 40em) and (max-width: 63.9375em) {
 				margin: 6rem auto;
 				img:nth-child(2){
-				transform: translate(-40%, -50%);
-			}
+					transform: translate(-40%, -50%);
+				}
 			}
 		}
 	}
@@ -591,7 +624,7 @@
 			margin: 8rem 0 -7rem;
 		}
 		.image-wrapper {
-				margin-bottom: -7rem;
+			margin-bottom: -7rem;
 		}
 	}
 	.great-northern {
@@ -794,15 +827,15 @@
 			
 		}
 		img:last-of-type {
-		    opacity: 0;
-		    transition: opacity .5s $ease .75s;
+			opacity: 0;
+			transition: opacity .5s $ease .75s;
 			-webkit-mask: url('/Timeline/media/kochTimeline/kiiRevealMask.png') no-repeat;
 			-webkit-mask-size: 1500% 100%;
 			-webkit-mask-position: 100% 100%;
 			animation: maskOut .75s steps(14) .25s forwards;
-		    -webkit-animation-fill-mode: backwards;
-		    animation-fill-mode: backwards;
-		    background-position: 0 bottom;
+			-webkit-animation-fill-mode: backwards;
+			animation-fill-mode: backwards;
+			background-position: 0 bottom;
 		}
 		&:hover {
 			img:last-of-type {

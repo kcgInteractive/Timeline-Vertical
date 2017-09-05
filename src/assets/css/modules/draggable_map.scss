@@ -9,6 +9,9 @@
 	height: 65vh;
 	position: relative; 
 	margin-bottom: 5rem;
+	@media(max-width: 40rem) {
+		position: static;
+	}
 }
 
 .draggableMap img {
@@ -19,6 +22,9 @@
 	top: 0;
 	pointer-events: none;
 	z-index: 2; 
+	@media(max-width: 40rem) {
+		position: static;
+	}
 }
 
 .mapTexture {
@@ -35,6 +41,9 @@
 	background-size: 2%;
 	pointer-events: none;
 	opacity: .25; 
+	@media(max-width: 40rem) {
+		position: static;
+	}
 }
 
 .draggableMap #map {
@@ -44,6 +53,9 @@
 	top: -45%;
 	transform: scale(1);
 	transition: transform cubic-bezier(0.44, 0.2, 0, 1.01) 0.3s, filter cubic-bezier(0.44, 0.2, 0, 1.01) 0.75s;
+	@media(max-width: 40rem) {
+		position: static;
+	}
 }
 .draggableMap #map.active {}
 
@@ -187,6 +199,9 @@ _:-ms-input-placeholder, .draggableMap #map {
 	width: 33%;
 	text-align: left;
 	pointer-events: none; 
+	@media(max-width: 40rem) {
+		position: static;
+	}
 }
 @media (min-width: 1600px) {
 	.mapStatistics {
@@ -211,6 +226,9 @@ _:-ms-input-placeholder, .draggableMap #map {
 	padding: 2rem;
 	padding-bottom: 4rem;
 	background-color: #fff; 
+	@media(max-width: 40rem) {
+		position: static;
+	}
 }
 .mapStatistics > div.active {
 	opacity: 1;
@@ -309,6 +327,9 @@ _:-ms-input-placeholder, .draggableMap #map {
   opacity: 1;
   transition: width 1s ease;
   transition-delay: .5s; 
+  @media(max-width: 40rem) {
+		position: static;
+	}
 }
 // .mapStatistics li div:nth-child(3) {
 // 	bottom: 0;

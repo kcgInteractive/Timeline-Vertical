@@ -289,6 +289,9 @@
 
 .Video_Feature_5{
   margin: 5rem 0;
+  @media(max-width: 64rem) {
+    margin: 1rem 0;
+  }
   .background {
     background-repeat:no-repeat;
     background-position:center;

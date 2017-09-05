@@ -294,8 +294,11 @@
 	{% } #%}
 
 	{% if(Module_Type == "Image_Caption_One") { %}
-	<p>Image Caption One</p>
-	{^SubLevelPlaceHolder^}
+	<div class="row">
+    <div class="small-12 medium-8 large-6 medium-offset-2 large-offset-1 columns outer">
+      {^SubLevelPlaceHolder^}
+    </div>
+  </div>
 	{% } #%}
 
 	{% if(Module_Type == "Image_Caption_Two") { %}
@@ -336,6 +339,17 @@
     </div>
   </div>
   {% } #%}
+
+  {% if(Module_Type == "50-50_images_video") { %}
+  <div class="row">
+    <div class="small-12 medium-12 large-6 large-offset-1 columns image-column">
+      {^SubLevelPlaceholder^}
+    </div>
+    <div class="small-12 medium-6 large-3 medium-offset-3 large-offset-1 columns end text-column">
+      {%Module_Copy%}
+    </div>
+  </div>
+  {% } %}
 
   {% if(Module_Type == "Custom_Charles_Shares") { %}
   <div class="row">

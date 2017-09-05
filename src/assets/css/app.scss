@@ -1,10 +1,19 @@
 @import 'variables_and_mixins.scss';
+<<<<<<< HEAD
 
 *, *:before, *:after {
 	-moz-box-shadow: 0 0 5px rgba(24, 174, 255, 0.5);
 	-webkit-box-shadow: 0 0 5px rgba(24, 174, 255, 0.5);
 	box-shadow: 0 0 5px rgba(24, 174, 255, 0.5);
 } 
+=======
+@import 'landing-page.scss';
+// *, *:before, *:after {
+// 	-moz-box-shadow: 0 0 5px rgba(255,157,24,.5);
+// 	-webkit-box-shadow: 0 0 5px rgba(255,157,24,.5);
+// 	box-shadow: 0 0 5px rgba(255,157,24,.5);
+// } 
+>>>>>>> master
 * , body {
 	box-sizing: border-box;
 }

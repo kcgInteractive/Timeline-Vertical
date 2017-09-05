@@ -1,4 +1,9 @@
 #NetherlandstoTexas {
+	.Section_Description {
+		div.columns {
+			margin-bottom: -38rem;
+		}
+	}
 	.quanah-bg {
 		background-image: url('/Timeline/media/kochTimeline/NetherlandsToTexas/QuanahMill-Elevator.jpg');
 		background-size: cover;
@@ -25,6 +30,7 @@
 			margin-top: 11rem;
 		}
 	}
+<<<<<<< HEAD
 	@media screen and (max-width: 63.9375em) {
 		padding-bottom: 0;
 		.section-hero{
@@ -56,6 +62,11 @@
 			height: 45px;
 			bottom: 7px;
 			left: 0;
+=======
+	[id="269"] {
+		div.columns {
+			margin-left: 29%;
+>>>>>>> master
 		}
 	}
 }
@@ -187,6 +198,14 @@
 	}
 }
 #NewEndeavors {
+	.wedding {
+		.outer {
+			margin-bottom: -2rem;
+		}
+		.text-column {
+			margin-top: 4rem;
+		}
+	}
 	.float-right.wood-river {
 		.text-column {
 			margin-right: 0;
@@ -244,6 +263,11 @@
 			width: 66.667%;
 		}
 	}
+	.john-wayne {
+		img {
+			width: 80%;
+		}
+	}
 }
 #TheHomecoming {
 	.Section_Description {
@@ -258,7 +282,27 @@
 	}
 	.dear-boys {
 		.text-column {
-			margin: 9rem 0 9rem 3rem;
+			margin: 6rem 0 6rem 3rem;
+		}
+	}
+	.background-w-video {
+		p {
+			color: $gray;
+			font-weight: normal;
+		}
+		p.caption {
+			color: $koch-blue;
+		}
+		h2 {
+			margin-top: 3rem;
+			width: 85%;
+		}
+		.media-column {
+			margin-left: 0;
+			margin-right: 16.66667%;
+			div.background {
+				float: left !important;
+			}
 		}
 	}
 }
@@ -377,6 +421,49 @@
 		}
 
 	}
+	//Time of Transformation
+	.pine-bend {
+		background: url('/Timeline/media/kochTimeline/TimeofTransformation/PipesBG.jpg') no-repeat;
+		background-size: cover;
+		background-position: center;
+		.image-column {
+			position: relative;
+			img:nth-of-type(1) {
+			    width: 80%;
+			    position: relative;
+			    left: 10%;
+			    top: -2rem;
+			}
+			img:nth-of-type(2) {
+			    width: 60%;
+			    position: absolute;
+			    left: 20%;
+			    bottom: -16rem;
+			}
+		}
+		.text-column {
+			margin: 6rem 0;
+			h2, p {
+				color: #fff;
+			}
+			h2 {
+				margin: 2rem 0 1rem;
+			}
+			.background {
+			    position: relative;
+			    width: 100%;
+			    padding-bottom: 56.25%;
+			    background-size: cover;
+			    background-position: center center;
+			}
+			.play-button {
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+			}
+		}
+	}
 }
 #ANewFoundation {
 	.Section_Description {
@@ -428,7 +515,7 @@
 	.Multi_Image_Feature {
 		background-image: url("/Timeline/media/kochTimeline/DavidKoch/dinosaur.jpg");
 		padding-bottom: 40rem;
-		margin-bottom: 5rem;
+		margin-bottom: -11rem;
 		.image-container{
 			img:nth-child(1){
 				left: 0;
@@ -454,6 +541,11 @@
 				}
 			}
 		}
+	}
+	.Image_Showcase_2.right {
+		.text-option div.columns {
+	  		margin-bottom: -5rem;
+	  	}
 	}
 	.influential {
 		p {
@@ -663,8 +755,20 @@
 			margin-bottom: -5rem;
 		}
 	}
+	.molex-img {
+		margin-bottom: -5rem;
+		.full-image {
+			padding: 16rem 0;
+		}
+	}
 	.powerful-partnership {
-		margin-bottom: 2rem;
+		div.columns {
+			margin-bottom: -3rem;
+		}
+		.optional-copy {
+			margin-top: 10rem;
+		}
+		
 	}
 	.looking-glass {
 		background: url('/Timeline/media/kochTimeline/AClearConnection/CC_GuardianAcquisition.jpg') no-repeat;
@@ -692,6 +796,9 @@
 			margin: 25rem 0 4rem;
 			padding-top: 0;
 		}
+	}
+	.two-videos {
+		background-image: url('/Timeline/media/kochTimeline/AClearConnection/CC_vid-background.jpg');
 	}
 }
 #WhatsNext {

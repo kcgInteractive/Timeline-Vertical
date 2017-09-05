@@ -1,5 +1,50 @@
 $(document).foundation();
 
+// LANDING PAGE SCRIPTS
+function landingSection(){
+
+  // SLIDE ATTRIBUTES FOR WIDTH AND SETTING UP MASK WIDTH
+  var length = $('#landingPageVisual').children().length,
+    screenWidth = $(window).width(),
+    slideImage = $('.landingPageImages'),
+    slideText = $('.landingPageSlideText'),
+    $length = screenWidth/length,
+    slide = $('.landingPageSlideText'),
+    slideNav = $('.landingPageSlideNav');
+
+  // SLIDE HOVER FUNCTIONALITY
+  if($(window).width() >=  769) {
+    slide.on({
+      mouseenter : function(){
+        // addclass to parent slide and get its number
+        $(this).addClass('active');
+        var number = $(this).attr('data-number');
+        // using that number add class to the mask
+        $('.landingPageImages[data-slide="' + number + '"]').addClass('active');
+      },
+      mouseleave : function(){
+        // reset upon leaving the area
+        $(this).removeClass('active');
+        var number = $(this).attr('data-number');
+        $('.landingPageImages[data-slide="' + number + '"]').removeClass('active');
+      }
+    });
+  } else {
+    // mobile functionality of the landing page
+    // need to revisit this when mobile comes back around
+    slide.on('click', function(){
+      $(this).addClass('active').siblings().removeClass('active');
+      var number = $(this).attr('data-number');
+      $('.landingPageImages[data-slide="' + number + '"]').addClass('active').siblings().removeClass('active');
+    });
+  }
+
+}
+$(document).ready(function() {
+  landingSection();
+});
+// end
+
 //Menu Navigation
 $('.button-wrapper').on('click', function() {
   $('.main-menu').addClass('active');
@@ -151,124 +196,124 @@ alternative to jQuery UI’s draggable
 based on comments from: http://css-tricks.com/snippets/jquery/draggable-without-jquery-ui/
 usage example: $('.post-thumbnail, article header').draggable();
 --------------------------------------------------------------*/
-(function($) {
-    if (!jQuery().draggable) {
-        $.fn.draggable = function() {
-            var _fixMobileEvent = function (e) {
-                if (e.originalEvent && e.originalEvent.targetTouches && e.originalEvent.targetTouches[0]) {
-                    var t = e.originalEvent.targetTouches[0];
-                    e.pageX = t.clientX;
-                    e.pageY = t.clientY;
-                    return true;
-                } else {
-                    return false;
-                }
-            };
-            this
-                .css('cursor', 'move')
-                .on('mousedown touchstart', function(e) {
-                    _fixMobileEvent(e);
-                    var $dragged = $(this);
+// (function($) {
+//     if (!jQuery().draggable) {
+//         $.fn.draggable = function() {
+//             var _fixMobileEvent = function (e) {
+//                 if (e.originalEvent && e.originalEvent.targetTouches && e.originalEvent.targetTouches[0]) {
+//                     var t = e.originalEvent.targetTouches[0];
+//                     e.pageX = t.clientX;
+//                     e.pageY = t.clientY;
+//                     return true;
+//                 } else {
+//                     return false;
+//                 }
+//             };
+//             this
+//                 .css('cursor', 'move')
+//                 .on('mousedown touchstart', function(e) {
+//                     _fixMobileEvent(e);
+//                     var $dragged = $(this);
 
-                    var startOffset = $dragged.offset();
-                    // get start position of the item clicked
-                    var x = startOffset.left - e.pageX,
-                        y = startOffset.top - e.pageY,
-                        z = $dragged.css('z-index');
+//                     var startOffset = $dragged.offset();
+//                     // get start position of the item clicked
+//                     var x = startOffset.left - e.pageX,
+//                         y = startOffset.top - e.pageY,
+//                         z = $dragged.css('z-index');
 
-                    if (!$.fn.draggable.stack) {
-                        $.fn.draggable.stack = 1;
-                    }
-                    stack = $.fn.draggable.stack;
-                    var firstMove = true;
-                    var $preventClick = null;
+//                     if (!$.fn.draggable.stack) {
+//                         $.fn.draggable.stack = 1;
+//                     }
+//                     stack = $.fn.draggable.stack;
+//                     var firstMove = true;
+//                     var $preventClick = null;
 
-                    $(window)
-                        .on('mousemove.draggable touchmove.draggable', function(e) {
-                            _fixMobileEvent(e);
+//                     $(window)
+//                         .on('mousemove.draggable touchmove.draggable', function(e) {
+//                             _fixMobileEvent(e);
 
-                            // prevent scrolling when dragging is initiated
-                            $(window).scroll(function(event){
-                            	event.preventDefault();
-                            });
+//                             // prevent scrolling when dragging is initiated
+//                             $(window).scroll(function(event){
+//                             	event.preventDefault();
+//                             });
 
-	                            if (firstMove) {
-	                                firstMove = false;
-	                                $dragged
-	                                    .css({'transform': 'scale(1)',
-	                                          'bottom': 'auto', 'right': 'auto'
-	                                    });
-	                                    // ^^^^ can change scale here to show a "bump" effect
-	                                var $target = $(e.target);
-	                                if ($target.is('a')) {
-	                                    $preventClick = $target;
-	                                    $target.one('click.draggable', function(e) {
-	                                        e.preventDefault();
-	                                        e.stopImmediatePropagation();
-	                                    });
-	                                } else if ($dragged.is('a')) {
-	                                    $preventClick = $dragged;
-	                                    $dragged.one('click.draggable', function(e) {
-	                                        e.preventDefault();
-	                                        e.stopImmediatePropagation();
-	                                    });
-	                                }
-	                            }
-	                            var leftMax = x + e.pageX,
-	                            	topMax = y + e.pageY;
-	                            if(300 > leftMax && leftMax > -1200) {
-		                            $dragged.offset({
-		                                left: x + e.pageX,
-		                                top: y + e.pageY
-		                            });
-		                        } else {
+// 	                            if (firstMove) {
+// 	                                firstMove = false;
+// 	                                $dragged
+// 	                                    .css({'transform': 'scale(1)',
+// 	                                          'bottom': 'auto', 'right': 'auto'
+// 	                                    });
+// 	                                    // ^^^^ can change scale here to show a "bump" effect
+// 	                                var $target = $(e.target);
+// 	                                if ($target.is('a')) {
+// 	                                    $preventClick = $target;
+// 	                                    $target.one('click.draggable', function(e) {
+// 	                                        e.preventDefault();
+// 	                                        e.stopImmediatePropagation();
+// 	                                    });
+// 	                                } else if ($dragged.is('a')) {
+// 	                                    $preventClick = $dragged;
+// 	                                    $dragged.one('click.draggable', function(e) {
+// 	                                        e.preventDefault();
+// 	                                        e.stopImmediatePropagation();
+// 	                                    });
+// 	                                }
+// 	                            }
+// 	                            var leftMax = x + e.pageX,
+// 	                            	topMax = y + e.pageY;
+// 	                            if(300 > leftMax && leftMax > -1200) {
+// 		                            $dragged.offset({
+// 		                                left: x + e.pageX,
+// 		                                top: y + e.pageY
+// 		                            });
+// 		                        } else {
 									
-		                        }
-	                            e.preventDefault();
-	                            // if(300 > leftMax && leftMax > -1200 && 200 < topMax && topMax < 800) {
-                        })
-                        .on('mouseup touchend touchcancel', function() {
-                            $(this).off('mousemove.draggable touchmove.draggable');
-                            $dragged.css({'transform': 'scale(1)'});
-                            // revert scale back to one
-                            $.fn.draggable.stack++;
-                            if (_fixMobileEvent(e)) {
-                                if ($preventClick) {
-                                	$preventClick.off('click.draggable');
-                                }
-                                var endOffset = $dragged.offset();
-                                if (Math.abs(endOffset.left - startOffset.left) <= 3 && Math.abs(endOffset.top - startOffset.top) <= 3) {
+// 		                        }
+// 	                            e.preventDefault();
+// 	                            // if(300 > leftMax && leftMax > -1200 && 200 < topMax && topMax < 800) {
+//                         })
+//                         .on('mouseup touchend touchcancel', function() {
+//                             $(this).off('mousemove.draggable touchmove.draggable');
+//                             $dragged.css({'transform': 'scale(1)'});
+//                             // revert scale back to one
+//                             $.fn.draggable.stack++;
+//                             if (_fixMobileEvent(e)) {
+//                                 if ($preventClick) {
+//                                 	$preventClick.off('click.draggable');
+//                                 }
+//                                 var endOffset = $dragged.offset();
+//                                 if (Math.abs(endOffset.left - startOffset.left) <= 3 && Math.abs(endOffset.top - startOffset.top) <= 3) {
 
-                                    if ($preventClick) {
-                                        $preventClick[0].click();
-                                    } else {
-                                        var $target = $(e.target);
-                                        if ($target.is('a')) {
-                                            e.target.click();
-                                        } else if ($dragged.is('a')) {
-                                            $dragged[0].click();
-                                        }
-                                    }
-                                }
-                            }
-                        });
+//                                     if ($preventClick) {
+//                                         $preventClick[0].click();
+//                                     } else {
+//                                         var $target = $(e.target);
+//                                         if ($target.is('a')) {
+//                                             e.target.click();
+//                                         } else if ($dragged.is('a')) {
+//                                             $dragged[0].click();
+//                                         }
+//                                     }
+//                                 }
+//                             }
+//                         });
 
-                    e.preventDefault();
-                });
-            return this;
-        };
-    }
-})(jQuery);
+//                     e.preventDefault();
+//                 });
+//             return this;
+//         };
+//     }
+// })(jQuery);
 
-// intiate draggable function on click of map
-$('.draggableMap #map').on('click', function(){
-	// remove click to drag pompt
-	$(this).siblings('#clickAndDrag').fadeOut();
-	$(this).addClass('active').draggable({
-		axis: 'x',
-		containment : 'parent'
-	});
-});
+// // intiate draggable function on click of map
+// $('.draggableMap #map').on('click', function(){
+// 	// remove click to drag pompt
+// 	$(this).siblings('#clickAndDrag').fadeOut();
+// 	$(this).addClass('active').draggable({
+// 		axis: 'x',
+// 		containment : 'parent'
+// 	});
+// });
 //GET HEIGHT AND WIDTH OF MAPMASK TO GIVE TO .MAP
 function mapMaskCSS(){
 

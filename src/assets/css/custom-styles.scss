@@ -78,6 +78,9 @@
 		.text-wrapper {
 			width: 33%;
 			margin-left: 0;
+			@media screen and (max-width: 63.9375em) {
+				width: 100%;
+			}
 		}
 		.background {
 			width: 100%;
@@ -118,6 +121,9 @@
 	[id="32"] {
 		.text-column {
 			margin: 8rem 1rem 8rem 5.75rem;
+			@media screen and (max-width: 63.9375em) {
+				margin: 0;
+			}
 		}
 	}
 	.short-lived {

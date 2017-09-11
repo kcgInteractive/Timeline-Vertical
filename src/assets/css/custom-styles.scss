@@ -274,8 +274,9 @@
 		div.columns {
 			margin-left: 25%;
 			margin-bottom: -10rem;
-			@media(max-width: 40rem) {
+			@media(max-width: 64rem) {
 				margin-bottom: 0;
+				margin-left: 0;
 			}
 		}
 		.background {
